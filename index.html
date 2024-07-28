@@ -8,35 +8,52 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="js/app.js" defer></script>
+    <link rel="icon" href="png/logotip.png" type="image/png" />
+    <link rel="shortcut icon" href="png/logotip.png" type="image/png" />
   </head>
   <body>
     <div class="wrap">
       <div class="first">
         <div class="navbar">
-          <div class="navcon">
-            <a href="#route"
-              ><img src="logo.svg" alt="" width="80vw" class="logo"
-            /></a>
-            <a href="#route" class="reef"><div>Главная</div></a>
-            <a href="map.html" class="reef"><div>Карта</div></a>
-            <div>О нас</div>
-            <div>Новости</div>
-            <img src="search.svg" alt="" class="lupa" />
-          </div>
+          <a href="#route"><img src="svg/logo.svg" alt="" class="logo" /></a>
+          <a href="#route" class="reef"><div>Главная</div></a>
+          <a href="map.html" class="reef"><div>Карта</div></a>
+          <div>О нас</div>
+          <div>Новости</div>
+          <img src="svg/search.svg" alt="" class="lupa" />
         </div>
         <div class="general">
-          <div class="main_text">
-            <span style="font-size: 2.5vw">открываем новые маршруты</span
-            ><br /><span style="font-family: Rubik-EB">НА СВОИХ ДВОИХ</span>
+          <div class="layers">
+            <div
+              class="layer layer-back"
+              style="background-image: url(png/back.png)"
+            ></div>
+            <div
+              class="layer layer-third"
+              style="background-image: url(png/third.png)"
+            ></div>
+            <div
+              class="layer layer-second"
+              style="background-image: url(png/second.png)"
+            ></div>
+            <div class="main_text">
+              <span style="font-size: 2.5vw">открываем новые маршруты</span
+              ><br /><span style="font-family: Rubik-EB">НА СВОИХ ДВОИХ</span>
+            </div>
+            <div
+              class="layer layer-first"
+              style="background-image: url(png/first.png)"
+            ></div>
           </div>
-          <img src="head_back.png" alt="ууупс, что-то не так" width="100%" />
+
           <div class="arr">
-            <img src="arrow.svg" alt="" />
+            <img src="svg/arrow.svg" alt="" style="width: 10vw" />
           </div>
         </div>
       </div>
       <div class="second">
-        <img src="dark_green.png" alt="" width="100%" />
+        <img src="png/dark_green.png" alt="" width="100%" />
         <div class="flex_second">
           <div class="cyfr">
             <span style="color: azure"
@@ -44,7 +61,7 @@
               России</span
             >
           </div>
-          <img src="arrow2.svg" alt="" width="40%" />
+          <img src="svg/arrow2.svg" alt="" class="sec_ar" />
           <div class="find2">
             <span style="font-family: Rubik-EB; color: #1e444b"
               >Найти тропу</span
@@ -52,7 +69,7 @@
           </div>
         </div>
         <div class="route">
-          <img src="route_line.svg" alt="" width="100%" />
+          <img src="svg/route_line.svg" alt="" width="100%" />
         </div>
         <div class="chisla">
           <div class="a">1</div>
@@ -82,16 +99,16 @@
           <div style="margin-right: -0.7em">2</div>
         </div>
         <div class="otkr2">
-          <img src="ph_otkr2.png" alt="" width="100%" /><br />
+          <img src="png/ph_otkr2.png" alt="" width="100%" /><br />
           <span
             style="font-family: Rubik-EB; font-size: 1vw; text-align: center"
             >Софийские озёра</span
           ><br />
           <img
-            src="otkr_arr.svg"
+            src="svg/otkr_arr.svg"
             alt=""
             style="font-family: Rubik-EB; font-size: 1vw"
-          />5 км <img src="time_otkr2.svg" alt="" />2-3 ч <br />
+          />5 км <img src="svg/time_otkr2.svg" alt="" />2-3 ч <br />
           Софийские озёра в Архызе — сложный, но очень красивый и посещаемый
           маршрут. Сюда можно добраться в рамках однодневной экскурсии, но
           лучше...
@@ -112,69 +129,69 @@
         </div>
         <div id="route" class="marsh">
           <div class="marsh_con">
-            <img src="ph_imp.png" alt="" width="85%" />
+            <img src="png/ph_imp.png" alt="" width="85%" />
             <div class="first_title">Тропой императоров</div>
             <img
-              src="bookmark.svg"
+              src="svg/bookmark.svg"
               alt=""
               style="position: absolute; left: 20vw; top: 2vw; width: 2vw"
             />
             <div class="sec_title">Р. Дагестан</div>
             <div class="niz_title">
-              <img src="arr_wh.svg" alt="" width="20%" />
+              <img src="svg/arr_wh.svg" alt="" width="20%" />
               5 км <br />
-              <img src="time_wh.svg" alt="" width="20%" />
+              <img src="svg/time_wh.svg" alt="" width="20%" />
               2-3 ч
             </div>
             <div class="know_more">Узнать больше ></div>
           </div>
           <div class="marsh_con">
-            <img src="ad.png" alt="" width="85%" />
+            <img src="png/ad.png" alt="" width="85%" />
             <div class="first_title">Большой Тхач</div>
             <img
-              src="bookmark.svg"
+              src="svg/bookmark.svg"
               alt=""
               style="position: absolute; left: 20vw; top: 2vw; width: 2vw"
             />
             <div class="sec_title" style="top: 15%">Р. Адыгея</div>
             <div class="niz_title">
-              <img src="arr_wh.svg" alt="" width="20%" />
+              <img src="svg/arr_wh.svg" alt="" width="20%" />
               55 км <br />
-              <img src="time_wh.svg" alt="" width="20%" />
+              <img src="svg/time_wh.svg" alt="" width="20%" />
               5-7 д
             </div>
             <div class="know_more">Узнать больше ></div>
           </div>
           <div class="marsh_con">
-            <img src="old_road.png" alt="" width="85%" />
+            <img src="png/old_road.png" alt="" width="85%" />
             <div class="first_title">Старая дорога</div>
             <img
-              src="bookmark.svg"
+              src="svg/bookmark.svg"
               alt=""
               style="position: absolute; left: 20vw; top: 2vw; width: 2vw"
             />
             <div class="sec_title" style="top: 15%">Краснодарский край</div>
             <div class="niz_title">
-              <img src="arr_wh.svg" alt="" width="20%" />
+              <img src="svg/arr_wh.svg" alt="" width="20%" />
               2.4 км <br />
-              <img src="time_wh.svg" alt="" width="20%" />
+              <img src="svg/time_wh.svg" alt="" width="20%" />
               2-3 ч
             </div>
             <div class="know_more">Узнать больше ></div>
           </div>
           <div class="marsh_con">
-            <img src="krugo.png" alt="" width="85%" />
+            <img src="png/krugo.png" alt="" width="85%" />
             <div class="first_title">Кругозор <br />Аишха</div>
             <img
-              src="bookmark.svg"
+              src="svg/bookmark.svg"
               alt=""
               style="position: absolute; left: 20vw; top: 2vw; width: 2vw"
             />
             <div class="sec_title">Краснодарский край</div>
             <div class="niz_title">
-              <img src="arr_wh.svg" alt="" width="20%" />
+              <img src="svg/arr_wh.svg" alt="" width="20%" />
               5 км <br />
-              <img src="time_wh.svg" alt="" width="20%" />
+              <img src="svg/time_wh.svg" alt="" width="20%" />
               1 д
             </div>
             <div class="know_more">Узнать больше ></div>
@@ -182,7 +199,12 @@
         </div>
         <div class="more_routes">Больше троп ></div>
         <div class="map3">
-          <img src="map.png" alt="" width="88%" style="padding-left: 6.2%" />
+          <img
+            src="png/map.png"
+            alt=""
+            width="88%"
+            style="padding-left: 6.2%"
+          />
           <div class="goto">Перейти к карте</div>
         </div>
         <div
@@ -199,7 +221,7 @@
         </div>
         <div class="last_flex" style="padding-bottom: 2em">
           <div class="last">
-            <img src="last1.png" alt="" width="108%" />
+            <img src="png/last1.png" alt="" width="108%" />
             <div class="first_title" style="left: 2%; top: 18%">
               ФГБУ Сочинский национальный парк
             </div>
@@ -207,14 +229,14 @@
               Краснодарский край
             </div>
             <div class="niz_title" style="width: 8em; left: 2%; bottom: 15%">
-              <img src="arr_wh.svg" alt="" width="15%" /> 2 маршрута
+              <img src="svg/arr_wh.svg" alt="" width="15%" /> 2 маршрута
             </div>
             <div class="know_more" style="bottom: 15%; right: -6%">
               Узнать больше >
             </div>
           </div>
           <div class="last">
-            <img src="gos.png" alt="" width="108%" />
+            <img src="png/gos.png" alt="" width="108%" />
             <div class="first_title" style="left: 2%; top: 18%">
               Государственный природный заповедник "Утриш"
             </div>
@@ -222,27 +244,27 @@
               Краснодарский край
             </div>
             <div class="niz_title" style="width: 8em; left: 2%; bottom: 15%">
-              <img src="arr_wh.svg" alt="" width="15%" /> 1 маршрут
+              <img src="svg/arr_wh.svg" alt="" width="15%" /> 1 маршрут
             </div>
             <div class="know_more" style="bottom: 15%; right: -6%">
               Узнать больше >
             </div>
           </div>
           <div class="last">
-            <img src="last2.png" alt="" width="108%" />
+            <img src="png/last2.png" alt="" width="108%" />
             <div class="first_title" style="left: 2%; top: 18%">
               Национальный парк "Большой Тхач"
             </div>
             <div class="sec_title" style="left: 2%; top: 40%">Р. Адыгея</div>
             <div class="niz_title" style="width: 8em; left: 2%; bottom: 15%">
-              <img src="arr_wh.svg" alt="" width="15%" /> 1 маршрут
+              <img src="svg/arr_wh.svg" alt="" width="15%" /> 1 маршрут
             </div>
             <div class="know_more" style="bottom: 15%; right: -6%">
               Узнать больше >
             </div>
           </div>
           <div class="last">
-            <img src="last4.png" alt="" width="108%" />
+            <img src="png/last4.png" alt="" width="108%" />
             <div class="first_title" style="left: 2%; top: 18%">
               ФГБУ “Тебердинский национальный парк”
             </div>
@@ -250,14 +272,14 @@
               Карачаево-Черкесская Р.
             </div>
             <div class="niz_title" style="width: 10em; left: 2%; bottom: 15%">
-              <img src="arr_wh.svg" alt="" width="15%" /> 12 маршрутов
+              <img src="svg/arr_wh.svg" alt="" width="15%" /> 12 маршрутов
             </div>
             <div class="know_more" style="bottom: 15%; right: -6%">
               Узнать больше >
             </div>
           </div>
           <div class="last">
-            <img src="last5.png" alt="" width="108%" />
+            <img src="png/last5.png" alt="" width="108%" />
             <div class="first_title" style="left: 2%; top: 18%">
               Куратинское ущелье
             </div>
@@ -265,14 +287,14 @@
               Р. Северная Осетия - Алания
             </div>
             <div class="niz_title" style="width: 10em; left: 2%; bottom: 15%">
-              <img src="arr_wh.svg" alt="" width="15%" /> 6 маршрутов
+              <img src="svg/arr_wh.svg" alt="" width="15%" /> 6 маршрутов
             </div>
             <div class="know_more" style="bottom: 15%; right: -6%">
               Узнать больше >
             </div>
           </div>
           <div class="last">
-            <img src="last_vector.svg" alt="" width="108%" />
+            <img src="svg/last_vector.svg" alt="" width="108%" />
             <div class="first_title" style="left: 2%; top: 18%">
               Больше объектов ООПТ
             </div>
@@ -295,15 +317,13 @@
         <div class="footer">
           <div class="footer_item">
             <div class="foot_t">Контакты</div>
-            <br />
             <div class="foot_t2">
               nasvdv@yandex.ru<br />
               8 (977) 718-08-15
             </div>
           </div>
           <div class="footer_item">
-            <div class="foot_t">Контакты</div>
-            <br />
+            <div class="foot_t">Полезные ссылки</div>
             <div class="foot_t2">
               О проекте<br />
               Стать партнёром
@@ -311,9 +331,8 @@
           </div>
           <div class="footer_item">
             <div class="foot_t">Социальные сети</div>
-            <br />
             <div class="foot_t2">
-              <img src="icons.svg" alt="" width="100vw" />
+              <img src="svg/icons.svg" alt="" class="soc" />
             </div>
           </div>
         </div>

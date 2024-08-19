@@ -139,6 +139,7 @@
   font-size: 2vw;
   text-shadow: #000000 1px 0 10px;
 }
+
 .arr {
   position: absolute;
   bottom: 10%;
@@ -426,4 +427,148 @@ div.marsh > div {
 .soc {
   width: 7vw;
   height: 4vw;
+}
+
+.search_wrap {
+  position: absolute;
+  top: 8.5vw;
+  left: 3vw;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 25vw;
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  box-shadow: #000000 1px 0 20px;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.search_item {
+  border-radius: 0.5rem;
+  font-size: 1vw;
+  font-family: Rubik-Re;
+  align-content: center;
+  padding: 0.5vw;
+  margin: 0.2vw;
+}
+
+.sit1 {
+  height: 2vw;
+  background-color: #ffffff;
+  flex-basis: 18vw;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #56565690;
+}
+
+.sit2 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sit3 {
+  height: 2vw;
+  background-color: #ffffff;
+  flex-basis: 3vw;
+  font-family: Rubik;
+}
+
+.sit4 {
+  height: 2vw;
+  background-color: #ffffff;
+  flex-basis: 9vw;
+  font-family: Rubik;
+}
+
+.sit5 {
+  height: 2vw;
+  background-color: #ffffff;
+  flex-basis: 13vw;
+  font-family: Rubik;
+}
+
+.sit6 {
+  height: 2vw;
+  background-color: #ffffff;
+  flex-basis: 6vw;
+  font-family: Rubik;
+}
+
+.sit7 {
+  height: 2vw;
+  background-color: #ffffff;
+  flex-basis: 15vw;
+  font-family: Rubik;
+}
+
+.plmi_wrap {
+  position: absolute;
+  top: 20vw;
+  right: 3vw;
+}
+
+.plmi {
+  position: relative;
+  flex-direction: column;
+}
+
+.plm {
+  width: 1.5vw;
+  padding: 35%;
+}
+
+.plmiitem {
+  box-sizing: border-box;
+  width: 5vw;
+  height: 5vw;
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  margin: 1vw;
+  box-shadow: #000000 1px 0 15px;
+}
+
+.oopt_wrap {
+  position: absolute;
+  top: 8vw;
+  left: 5vw;
+}
+
+.search_oopt {
+  width: 100vw;
+  background-color: #1e444b;
+}
+
+.oopt_flex {
+  display: flex;
+  position: relative;
+  font-family: Rubik-EB;
+  color: #f7f7f7;
+  font-size: 2.5vw;
+  width: 95vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.oopt_info {
+  border-radius: 0.5rem;
+  font-size: 1vw;
+  font-family: Rubik;
+  align-content: center;
+  padding: 0.5vw;
+  margin: 0.2vw;
+  height: 2vw;
+  background-color: #ffffff;
+  flex-basis: 18vw;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 1.3vw;
 }

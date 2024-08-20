@@ -572,3 +572,101 @@ div.marsh > div {
   text-align: center;
   font-size: 1.3vw;
 }
+
+.info_wrap {
+  position: absolute;
+  top: 20vw;
+  left: 15vw;
+  text-align: center;
+}
+
+.info_flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_rt {
+  font-family: Rubik-EB;
+  color: #f4f4f4;
+  font-size: 3vw;
+}
+
+.type_rt {
+  font-family: Rubik-Re;
+  width: 10vw;
+  color: #dfdfdf;
+  text-align: center;
+  border: #dfdfdf 2px solid;
+  border-radius: 10vw;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+.foot_rt {
+  position: relative;
+  display: flex;
+  font-family: Rubik;
+  color: white;
+  justify-content: space-between;
+  font-size: 1.8vw;
+  margin-left: 5.8vw;
+}
+.foot_und {
+  position: relative;
+  display: flex;
+  font-family: Rubik;
+  color: white;
+  font-size: 1.8vw;
+  margin-left: 5.8vw;
+  align-items: center;
+}
+
+.rtinfo_flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5.6vw;
+  text-align: justify;
+  width: 85vw;
+}
+
+.rtinfo1 {
+  color: #1e444b;
+  font-family: Rubik-EB;
+  font-size: 1.7vw;
+}
+
+.rtinfo2 {
+  color: #1e444b;
+  font-family: Rubik-Re;
+  font-size: 1.3vw;
+}
+
+.rtinfo3 {
+  position: relative;
+  color: #1e444b;
+  font-family: Rubik-Re;
+  font-size: 1.3vw;
+  display: flex;
+}
+
+.oopt_info2 {
+  border-radius: 0.5rem;
+  font-size: 1vw;
+  font-family: Rubik;
+  padding: 0.5vw;
+  margin: 0.2vw;
+  padding: 1vw;
+  color: #1e444b;
+  font-size: 1.3vw;
+  border: #1e444b 3px solid;
+  background-color: rgba(139, 69, 19, 0);
+}
+
+.inf3it {
+  color: #1e444b;
+  font-family: Rubik-Re;
+  font-size: 1vw;
+}

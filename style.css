@@ -612,6 +612,7 @@ div.marsh > div {
   justify-content: space-between;
   font-size: 1.8vw;
   margin-left: 5.8vw;
+  text-align: center;
 }
 .foot_und {
   position: relative;
@@ -669,4 +670,12 @@ div.marsh > div {
   color: #1e444b;
   font-family: Rubik-Re;
   font-size: 1vw;
+}
+
+.paint {
+  fill: none;
+  stroke: black;
+  stroke-width: 3px;
+  cursor: pointer;
+  pointer-events: all;
 }

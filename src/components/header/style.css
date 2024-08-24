@@ -1,0 +1,54 @@
+.Header {
+  margin-bottom: -8px;
+  font-size: 30px;
+  position: relative;
+}
+
+.layers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.layer-back {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
+}
+
+.layer-third {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
+  margin-bottom: 5px;
+}
+
+.layer-second {
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+  margin-bottom: 11px;
+}
+
+.layer-first {
+  transform: translate3d(0, calc(var(--scrollTop) / 3.5), 0);
+  margin-bottom: 16px;
+}
+
+.main_text {
+  position: absolute;
+  color: #ffffff;
+  font-family: Rubik;
+  left: 3%;
+  top: 25%;
+  font-size: 8vw;
+  line-height: 0.9;
+  width: 9.5em;
+  text-shadow: #000000de 1px 0 20px;
+}

@@ -1,0 +1,46 @@
+.RouteCard {
+  position: relative;
+}
+
+.RouteCard .first_title {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+  font-family: Rubik-B;
+  color: aliceblue;
+  width: 70%;
+  font-size: 2vw;
+}
+
+.RouteCard .sec_title {
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  font-family: Rubik;
+  color: aliceblue;
+  width: 70%;
+  font-size: 1.5vw;
+}
+
+.RouteCard .niz_title {
+  position: absolute;
+  font-family: Rubik;
+  color: aliceblue;
+  bottom: 7%;
+  left: 5%;
+  font-size: 1.5vw;
+  width: 10vw;
+}
+
+.RouteCard .know_more {
+  position: absolute;
+  font-family: Rubik;
+  color: aliceblue;
+  background-color: #f0a54e;
+  border-radius: 0.7em;
+  padding: 0.7vw 0.4vw;
+  bottom: 7%;
+  right: 20%;
+  width: 9vw;
+  font-size: 1.1vw;
+}

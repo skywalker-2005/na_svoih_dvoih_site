@@ -1,0 +1,48 @@
+.OoptCard {
+  position: relative;
+  left: 6.2%;
+  width: 80vw;
+}
+
+.OoptCard .first_title {
+  position: absolute;
+  font-family: Rubik-B;
+  color: aliceblue;
+  width: 70%;
+  font-size: 2vw;
+  left: 2%;
+  top: 18%;
+}
+
+.OoptCard .sec_title {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  font-family: Rubik;
+  color: aliceblue;
+  width: 70%;
+  font-size: 1.5vw;
+}
+
+.OoptCard .niz_title {
+  position: absolute;
+  font-family: Rubik;
+  color: aliceblue;
+  bottom: 15%;
+  left: 2%;
+  font-size: 1.5vw;
+  width: 10em;
+}
+
+.OoptCard .know_more {
+  position: absolute;
+  font-family: Rubik;
+  color: aliceblue;
+  background-color: #f0a54e;
+  border-radius: 0.7em;
+  padding: 0.7vw 0.4vw;
+  bottom: 15%;
+  right: -6%;
+  width: 9vw;
+  font-size: 1.1vw;
+}

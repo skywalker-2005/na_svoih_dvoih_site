@@ -20,36 +20,45 @@
 
 @font-face {
   font-family: "Rubik";
-  src: local("Rubik-Medium"), url(/fonts/Rubik-Medium.ttf);
+  src: local("Rubik-Medium"), url(../fonts/Rubik-Medium.ttf);
 }
 @font-face {
   font-family: "Rubik-EB";
-  src: local("Rubik-EB"), url(/fonts/Rubik-ExtraBold.ttf);
+  src: local("Rubik-EB"), url(../fonts/Rubik-ExtraBold.ttf);
 }
 @font-face {
   font-family: "Rubik-B";
-  src: local("Rubik-B"), url(/fonts/Rubik-Bold.ttf);
+  src: local("Rubik-B"), url(../fonts/Rubik-Bold.ttf);
 }
 @font-face {
   font-family: "Rubik-Re";
-  src: local("Rubik-Re"), url(/fonts/Rubik-Regular.ttf);
+  src: local("Rubik-Re"), url(../fonts/Rubik-Regular.ttf);
 }
 
-.wrap {
+h2 {
+  padding-top: 5vw;
+  padding-bottom: 4vw;
+  padding-left: 6.2%;
+  color: #1e444b;
+  font-family: "Rubik-B";
+  font-size: 2.3vw;
+}
+
+/* .wrap {
   width: 100%;
   position: relative;
   font-size: 30px;
-}
+} */
 
-.first {
+/* .first {
   margin-bottom: -8px;
   font-size: 30px;
-}
+} */
 
-.navbar {
+/* .navbar {
   width: 100vw;
   font-family: Rubik;
-  color: #397998;
+  color: #1E444B;
   background-color: #fff;
   position: fixed;
   z-index: 1;
@@ -60,33 +69,35 @@
   padding-top: 2vw;
   text-align: center;
   height: 2.5vw;
-  font-size: 2vw;
-}
+  font-size: 1.5vw;
+} */
 
-.logo {
-  width: 9vw;
+/* .logo {
+  width: 7vw;
+  margin-left: 3vw;
   margin-right: 30vw;
-}
+} */
 
-.lupa {
+/* .lupa {
   width: 5vw;
-  height: 3vw;
-  padding-right: 3.5vw;
+  height: 2vw;
+  padding-right: 5vw;
   padding-bottom: 0.8rem;
-}
+  padding-top: 1vw;
+} */
 
-.reef {
-  color: #397998;
-  font-family: Rubik;
+/* .reef {
+  color: #1E444B;
   width: 10vw;
   text-decoration: none;
-}
+  padding-top: 1vw;
+} */
 
-.general {
+/* .general {
   position: relative;
-}
+} */
 
-.layers {
+/* .layers {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -121,9 +132,9 @@
 .layer-first {
   transform: translate3d(0, calc(var(--scrollTop) / 3.5), 0);
   margin-bottom: 16px;
-}
+} */
 
-.main_text {
+/* .main_text {
   position: absolute;
   color: #ffffff;
   font-family: Rubik;
@@ -133,14 +144,14 @@
   line-height: 0.9;
   width: 9.5em;
   text-shadow: #000000de 1px 0 20px;
-}
+} */
 
-.second {
+/* .second {
   position: relative;
   font-size: 30px;
-}
+} */
 
-.flex_second {
+/* .flex_second {
   display: flex;
   position: absolute;
   top: 10%;
@@ -155,7 +166,7 @@
   font-family: Rubik-Re;
   font-size: 2vw;
   text-shadow: #000000 1px 0 10px;
-}
+} */
 
 .arr {
   position: absolute;
@@ -163,7 +174,7 @@
   left: 46%;
 }
 
-.find2 {
+/* .find2 {
   background-color: #ffffff;
   border-radius: 100px;
   width: 20vw;
@@ -174,23 +185,24 @@
   font-size: 2vw;
   padding-top: 1em;
   box-shadow: #000000 1px 0 10px;
-}
+} */
 
-.sec_ar {
+/* .sec_ar {
   padding-top: 2vw;
   padding-left: 1.5vw;
   width: 40vw;
   height: 4vw;
 }
+
 .route {
   position: absolute;
   top: 40%;
   left: 6%;
   width: 86vw;
   height: 12.7em;
-}
+} */
 
-.chisla {
+/* .chisla {
   display: flex;
   font-family: Rubik-B;
   font-size: 15vw;
@@ -202,9 +214,9 @@
   justify-content: space-between;
   width: 80%;
   height: 50%;
-}
+} */
 
-.b {
+/* .b {
   align-self: flex-start;
   padding-left: 5%;
 }
@@ -224,9 +236,9 @@
 
 .e {
   align-self: flex-end;
-}
+} */
 
-.titles {
+/* .titles {
   display: flex;
   font-family: Rubik;
   font-size: 2vw;
@@ -238,9 +250,9 @@
   width: 80%;
   height: 30%;
   text-align: center;
-}
+} */
 
-.bb {
+/* .bb {
   align-self: flex-start;
   padding-left: 8%;
 }
@@ -263,9 +275,9 @@
 .ee {
   align-self: flex-end;
   padding-left: 4%;
-}
+} */
 
-.foot_sec {
+/* .foot_sec {
   position: absolute;
   display: flex;
   font-family: Rubik-Re;
@@ -289,9 +301,9 @@
   font-family: Rubik-B;
   width: 35%;
   font-size: 4.8vw;
-}
+} */
 
-.otkr2 {
+/* .otkr2 {
   position: absolute;
   top: 15vw;
   left: 40vw;
@@ -305,25 +317,25 @@
   padding: 2em;
   box-shadow: 0px 0px 20px 0px #000000;
   transform: rotate(-20deg);
-}
+} */
 
 .third {
   position: relative;
 }
 
-.marsh {
+.route_cards {
   display: flex;
   padding-left: 6.2%;
   justify-content: space-between;
 }
 
-div.marsh > div {
+div.route_cards > div {
   width: 28vw;
 }
 
-.marsh_con {
+/* .marsh_con {
   position: relative;
-}
+} */
 
 .first_title {
   position: absolute;
@@ -401,14 +413,15 @@ div.marsh > div {
   left: 2%;
 }
 
-.map3 {
+/* .map3 {
   position: relative;
-}
+} */
 
-.last_flex {
+.oopt_cards {
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
+  padding-bottom: 2em;
 }
 
 .last {
@@ -417,7 +430,7 @@ div.marsh > div {
   width: 80vw;
 }
 
-.footer {
+/* .footer {
   display: flex;
   background-color: #1e444b;
   padding-bottom: 1vw;
@@ -444,7 +457,7 @@ div.marsh > div {
 .soc {
   width: 7vw;
   height: 4vw;
-}
+} */
 
 .search_wrap {
   position: absolute;

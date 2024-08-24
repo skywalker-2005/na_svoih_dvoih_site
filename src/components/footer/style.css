@@ -1,0 +1,28 @@
+.Footer {
+  display: flex;
+  background-color: #1e444b;
+  padding-bottom: 1vw;
+}
+
+.footer_item {
+  padding: 4vw 5vw;
+}
+
+.foot_t {
+  color: #b0b0b0;
+  font-size: 1.5vw;
+  font-family: Rubik-Re;
+}
+
+.foot_t2 {
+  color: #ffffff;
+  font-size: 1.5vw;
+  font-family: Rubik-Re;
+  line-height: 1.5;
+  padding-top: 2vw;
+}
+
+.soc {
+  width: 7vw;
+  height: 4vw;
+}

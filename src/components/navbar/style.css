@@ -1,0 +1,37 @@
+.Navbar {
+  width: 100vw;
+  font-family: Rubik;
+  color: #1E444B;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  opacity: 92%;
+  display: flex;
+  padding: 2vw;
+  justify-content: space-between;
+  padding-top: 2vw;
+  text-align: center;
+  height: 2.5vw;
+  font-size: 1.5vw;
+}
+
+.logo {
+  width: 7vw;
+  margin-left: 3vw;
+  margin-right: 30vw;
+}
+
+.lupa {
+  width: 5vw;
+  height: 2vw;
+  padding-right: 5vw;
+  padding-bottom: 0.8rem;
+  padding-top: 1vw;
+}
+
+.reef {
+  color: #1E444B;
+  width: 10vw;
+  text-decoration: none;
+  padding-top: 1vw;
+}

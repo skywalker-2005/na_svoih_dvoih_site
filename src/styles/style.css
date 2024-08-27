@@ -3,20 +3,15 @@
   padding: 0;
 }
 
-/* @font-face {
-  font-family: "Rubik";
-  src: local("Rubik-Medium"), url(/fonts/rubik_medium.ttf);
+#root {
+  min-height: 100vh;
 }
 
-@font-face {
-  font-family: "Rubik-B";
-  src: local("Rubik-B"), url(/fonts/rubik-extrabold.ttf);
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-@font-face {
-  font-family: "Rubik-Re";
-  src: local("Rubik-Re"), url(/fonts/rubik.ttf);
-} */
 
 @font-face {
   font-family: "Rubik";
@@ -44,284 +39,22 @@ h2 {
   font-size: 2.3vw;
 }
 
-/* .wrap {
-  width: 100%;
-  position: relative;
-  font-size: 30px;
-} */
-
-/* .first {
-  margin-bottom: -8px;
-  font-size: 30px;
-} */
-
-/* .navbar {
-  width: 100vw;
-  font-family: Rubik;
-  color: #1E444B;
-  background-color: #fff;
-  position: fixed;
-  z-index: 1;
-  opacity: 92%;
-  display: flex;
-  padding: 2vw;
-  justify-content: space-between;
-  padding-top: 2vw;
-  text-align: center;
-  height: 2.5vw;
-  font-size: 1.5vw;
-} */
-
-/* .logo {
-  width: 7vw;
-  margin-left: 3vw;
-  margin-right: 30vw;
-} */
-
-/* .lupa {
-  width: 5vw;
-  height: 2vw;
-  padding-right: 5vw;
-  padding-bottom: 0.8rem;
-  padding-top: 1vw;
-} */
-
-/* .reef {
-  color: #1E444B;
-  width: 10vw;
-  text-decoration: none;
-  padding-top: 1vw;
-} */
-
-/* .general {
-  position: relative;
-} */
-
-/* .layers {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.layer {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  will-change: transform;
-}
-
-.layer-back {
-  transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
-}
-
-.layer-third {
-  transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
-  margin-bottom: 5px;
-}
-
-.layer-second {
-  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
-  margin-bottom: 11px;
-}
-
-.layer-first {
-  transform: translate3d(0, calc(var(--scrollTop) / 3.5), 0);
-  margin-bottom: 16px;
-} */
-
-/* .main_text {
-  position: absolute;
-  color: #ffffff;
-  font-family: Rubik;
-  left: 3%;
-  top: 25%;
-  font-size: 8vw;
-  line-height: 0.9;
-  width: 9.5em;
-  text-shadow: #000000de 1px 0 20px;
-} */
-
-/* .second {
-  position: relative;
-  font-size: 30px;
-} */
-
-/* .flex_second {
-  display: flex;
-  position: absolute;
-  top: 10%;
-  justify-content: space-between;
-  left: 10%;
-  right: 10%;
-  height: 2.5vw;
-}
-
-.cyfr {
-  width: 16.433em;
-  font-family: Rubik-Re;
-  font-size: 2vw;
-  text-shadow: #000000 1px 0 10px;
-} */
-
-.arr {
-  position: absolute;
-  bottom: 10%;
-  left: 46%;
-}
-
-/* .find2 {
-  background-color: #ffffff;
-  border-radius: 100px;
-  width: 20vw;
-  height: 5vw;
-  font-size: 2vw;
-  text-align: center;
-  margin-left: 0.5em;
-  font-size: 2vw;
-  padding-top: 1em;
-  box-shadow: #000000 1px 0 10px;
-} */
-
-/* .sec_ar {
-  padding-top: 2vw;
-  padding-left: 1.5vw;
-  width: 40vw;
-  height: 4vw;
-}
-
-.route {
-  position: absolute;
-  top: 40%;
-  left: 6%;
-  width: 86vw;
-  height: 12.7em;
-} */
-
-/* .chisla {
-  display: flex;
-  font-family: Rubik-B;
-  font-size: 15vw;
-  position: absolute;
-  top: 30%;
-  left: 8%;
-  opacity: 20%;
-  color: aliceblue;
-  justify-content: space-between;
-  width: 80%;
-  height: 50%;
-} */
-
-/* .b {
-  align-self: flex-start;
-  padding-left: 5%;
-}
-
-.d {
-  align-self: flex-start;
-}
-
-.a {
-  align-self: flex-end;
-  padding-left: 2%;
-}
-
-.c {
-  align-self: flex-end;
-}
-
-.e {
-  align-self: flex-end;
-} */
-
-/* .titles {
-  display: flex;
-  font-family: Rubik;
-  font-size: 2vw;
-  position: absolute;
-  top: 40%;
-  left: 5%;
-  color: aliceblue;
-  justify-content: space-between;
-  width: 80%;
-  height: 30%;
-  text-align: center;
-} */
-
-/* .bb {
-  align-self: flex-start;
-  padding-left: 8%;
-}
-
-.dd {
-  padding-left: 11%;
-  align-self: flex-start;
-}
-
-.aa {
-  align-self: flex-end;
-  padding-left: 2%;
-}
-
-.cc {
-  align-self: flex-end;
-  padding-left: 3em;
-}
-
-.ee {
-  align-self: flex-end;
-  padding-left: 4%;
-} */
-
-/* .foot_sec {
-  position: absolute;
-  display: flex;
-  font-family: Rubik-Re;
-  top: 83%;
-  left: 6.2%;
-  justify-content: space-between;
-  width: 85vw;
-  height: 5vw;
-  color: aliceblue;
-  font-size: 2vw;
-  align-items: end;
-}
-
-.foot_sec_chis {
-  position: absolute;
-  display: flex;
-  color: aliceblue;
-  top: 83.5%;
-  left: 40%;
-  justify-content: space-between;
-  font-family: Rubik-B;
-  width: 35%;
-  font-size: 4.8vw;
-} */
-
-/* .otkr2 {
-  position: absolute;
-  top: 15vw;
-  left: 40vw;
-  font-size: 30%;
-  background-color: aliceblue;
-  width: 10vw;
+h3 {
   color: #1e444b;
-  font-family: Rubik-Re;
-  font-size: 0.7vw;
-  border-radius: 2em;
-  padding: 2em;
-  box-shadow: 0px 0px 20px 0px #000000;
-  transform: rotate(-20deg);
-} */
-
-.third {
-  position: relative;
+  font-family: "Rubik-B";
+  font-size: 1.6vw;
+  padding: 0;
+  margin-bottom: 1vw;
 }
+
+p {
+  color: #1e444b;
+  font-family: "Rubik-Re";
+  font-size: 1.3vw;
+  margin-bottom: 2vw;
+}
+
+/* Home */
 
 .route_cards {
   display: flex;
@@ -329,13 +62,7 @@ h2 {
   justify-content: space-between;
 }
 
-div.route_cards > div {
-  width: 28vw;
-}
-
-/* .marsh_con {
-  position: relative;
-} */
+/* последняя плашка на блоке оопт */
 
 .first_title {
   position: absolute;
@@ -413,15 +140,11 @@ div.route_cards > div {
   left: 2%;
 }
 
-/* .map3 {
-  position: relative;
-} */
-
 .oopt_cards {
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
-  padding-bottom: 2em;
+  margin-bottom: 2vw;
 }
 
 .last {
@@ -430,34 +153,7 @@ div.route_cards > div {
   width: 80vw;
 }
 
-/* .footer {
-  display: flex;
-  background-color: #1e444b;
-  padding-bottom: 1vw;
-}
-
-.footer_item {
-  padding: 4vw 5vw;
-}
-
-.foot_t {
-  color: #b0b0b0;
-  font-size: 1.5vw;
-  font-family: Rubik-Re;
-}
-
-.foot_t2 {
-  color: #ffffff;
-  font-size: 1.5vw;
-  font-family: Rubik-Re;
-  line-height: 1.5;
-  padding-top: 2vw;
-}
-
-.soc {
-  width: 7vw;
-  height: 4vw;
-} */
+/* Map */
 
 .search_wrap {
   position: absolute;
@@ -563,95 +259,7 @@ div.route_cards > div {
   box-shadow: #000000 1px 0 15px;
 }
 
-.oopt_wrap {
-  position: absolute;
-  top: 8vw;
-  left: 5vw;
-}
-
-.search_oopt {
-  width: 100vw;
-  background-color: #1e444b;
-}
-
-.oopt_flex {
-  display: flex;
-  position: relative;
-  font-family: Rubik-B;
-  color: #f7f7f7;
-  font-size: 2.5vw;
-  width: 95vw;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.oopt_info {
-  border-radius: 0.5rem;
-  font-size: 1vw;
-  font-family: Rubik;
-  align-content: center;
-  padding: 0.5vw;
-  margin: 0.2vw;
-  height: 2vw;
-  background-color: #ffffff;
-  flex-basis: 18vw;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #f4f4f4;
-  text-align: center;
-  font-size: 1.3vw;
-}
-
-.info_wrap {
-  position: absolute;
-  top: 20vw;
-  left: 15vw;
-  text-align: center;
-}
-
-.info_flex {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main_rt {
-  font-family: Rubik-B;
-  color: #f4f4f4;
-  font-size: 3vw;
-}
-
-.type_rt {
-  font-family: Rubik-Re;
-  width: 10vw;
-  color: #dfdfdf;
-  text-align: center;
-  border: #dfdfdf 2px solid;
-  border-radius: 10vw;
-  font-size: 1.5vw;
-  margin-top: 1vw;
-}
-
-.foot_rt {
-  position: relative;
-  display: flex;
-  font-family: Rubik;
-  color: white;
-  justify-content: space-between;
-  font-size: 1.8vw;
-  margin-left: 5.8vw;
-}
-.foot_und {
-  position: relative;
-  display: flex;
-  font-family: Rubik;
-  color: white;
-  font-size: 1.8vw;
-  margin-left: 5.8vw;
-  align-items: center;
-}
+/* Route */
 
 .rtinfo_flex {
   position: relative;
@@ -664,7 +272,7 @@ div.route_cards > div {
 
 .rtinfo1 {
   color: #1e444b;
-  font-family: Rubik-B;
+  font-family: Rubik-EB;
   font-size: 1.7vw;
 }
 
@@ -682,12 +290,13 @@ div.route_cards > div {
   display: flex;
 }
 
-.oopt_info2 {
+.oopt_rules {
   border-radius: 0.5rem;
   font-size: 1vw;
   font-family: Rubik;
   padding: 0.5vw;
   margin: 0.2vw;
+  margin-bottom: 2vw;
   padding: 1vw;
   color: #1e444b;
   font-size: 1.3vw;
@@ -699,4 +308,12 @@ div.route_cards > div {
   color: #1e444b;
   font-family: Rubik-Re;
   font-size: 1vw;
+}
+
+.paint {
+  fill: none;
+  stroke: black;
+  stroke-width: 3px;
+  cursor: pointer;
+  pointer-events: all;
 }

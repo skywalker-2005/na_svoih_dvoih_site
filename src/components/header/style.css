@@ -52,3 +52,9 @@
   width: 9.5em;
   text-shadow: #000000de 1px 0 20px;
 }
+
+.arr {
+  position: absolute;
+  bottom: 10%;
+  left: 46%;
+}

@@ -1,0 +1,22 @@
+.MainRoutePoints {
+  position: relative;
+  color: #1e444b;
+  font-family: Rubik-Re;
+  font-size: 1.3vw;
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 2vw;
+}
+
+.MainRoutePoints img {
+  width: 3vw;
+}
+
+.route_point {
+  width: 44%;
+  margin-right: 5vw;
+  text-align: justify;
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+}

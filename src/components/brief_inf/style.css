@@ -1,0 +1,17 @@
+.BriefInf {
+  position: relative;
+  display: flex;
+  font-family: Rubik;
+  color: white;
+  font-size: 1vw;
+  margin-left: 5.8vw;
+  align-items: center;
+  gap: 3vw;
+  color: #1e444b;
+  margin-bottom: 2vw;
+}
+
+.item {
+  display: flex;
+  gap: 0.5vw;
+}

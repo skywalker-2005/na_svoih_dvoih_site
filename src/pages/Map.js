@@ -8,6 +8,7 @@ import museum from '../svg/museum.svg';
 import plus from '../svg/plus.svg';
 import minus from '../svg/minus.svg';
 import navi from '../svg/navi.svg';
+import background from '../png/Screenshot 2024-05-07 at 16.32 1.png';
 
 const Map = () => {
   const imgStyle = { width: '1vw', marginRight: '0.5vw' };
@@ -17,7 +18,7 @@ const Map = () => {
     <>
       <a href="route_info.html" target="_blank">
         <img
-          src="png/Screenshot 2024-05-07 at 16.32 1.png"
+          src={background}
           alt=""
           style={{ width: '100%', height: '100%' }}
         />

@@ -679,3 +679,7 @@ div.marsh > div {
   cursor: pointer;
   pointer-events: all;
 }
+
+.myClass:hover {
+  color: #000000;
+}

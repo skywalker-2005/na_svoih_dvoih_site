@@ -1,0 +1,11 @@
+.Btn {
+  font-family: Rubik;
+  font-size: 1vw;
+  height: 1.2vw;
+  padding: 0.7vw 0.7vw;
+  border-radius: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f0a54e;
+  color: aliceblue;
+}

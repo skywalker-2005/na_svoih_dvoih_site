@@ -1,22 +1,17 @@
 import './style.css';
 import arr_wh from "../../svg/arr_wh.svg";
+import Btn from '../btn/Btn';
 
 const OoptCard = (props) => {
   return (
     <div className="OoptCard">
-      <img src={props.img} alt="" width="108%" />
-      <div className="first_title">
-        {props.title}
-      </div>
-      <div className="sec_title">
-        {props.region}
-      </div>
+      <img src={props.img} alt="" style={{ width: "100%", filter: "brightness(80%)" }}/>
+      <h3 className="first_title">{props.title}</h3>
+      <p className="sec_title">{props.region}</p>
       <div className="niz_title">
-        <img src={arr_wh} alt="" width="15%" /> {props.routesNum}
+        <img src={arr_wh} alt="" width="10%" /> {props.routesNum}
       </div>
-      <div className="know_more">
-        Узнать больше {'>'}
-      </div>
+      <Btn text='Узнать больше >' link='' />
     </div>
   );
 }

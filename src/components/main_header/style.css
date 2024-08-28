@@ -1,4 +1,4 @@
-.Header {
+.MainHeader {
   margin-bottom: -8px;
   font-size: 30px;
   position: relative;
@@ -50,7 +50,6 @@
   font-size: 8vw;
   line-height: 0.9;
   width: 9.5em;
-  text-shadow: #000000de 1px 0 20px;
 }
 
 .arr {

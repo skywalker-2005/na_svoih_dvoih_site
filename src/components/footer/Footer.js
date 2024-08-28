@@ -1,27 +1,29 @@
 import "./style.css";
-import icons from "../../svg/icons.svg";
+import vk from "../../svg/vk.svg";
+import tg from "../../svg/tg.svg";
 
 const Footer = () => {
   return (
     <div className="Footer">
       <div className="footer_item">
-        <div className="foot_t">Контакты</div>
-        <div className="foot_t2">
+        <p className="foot_t">Контакты</p>
+        <p className="foot_t2">
           nasvdv@yandex.ru<br />
           8 (977) 718-08-15
-        </div>
+        </p>
       </div>
       <div className="footer_item">
-        <div className="foot_t">Полезные ссылки</div>
-        <div className="foot_t2">
+        <p className="foot_t">Полезные ссылки</p>
+        <p className="foot_t2">
           О проекте<br />
           Стать партнёром
-        </div>
+        </p>
       </div>
       <div className="footer_item">
-        <div className="foot_t">Социальные сети</div>
-        <div className="foot_t2">
-          <img src={icons} alt="" className="soc" />
+        <p className="foot_t">Социальные сети</p>
+        <div className="social">
+          <a href='https://vk.com/na.svoih.dvoih' target="_blank" rel="noreferrer"><img src={vk} alt='' className='soc'></img></a>
+          <a href='https://t.me/na_svoih_dvoih' target="_blank" rel="noreferrer"><img src={tg} alt='' className='soc'></img></a>
         </div>
       </div>
     </div>

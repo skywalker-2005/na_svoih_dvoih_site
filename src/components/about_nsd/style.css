@@ -3,7 +3,7 @@
   font-size: 30px;
 }
 
-.flex_second {
+.first_block {
   display: flex;
   position: absolute;
   top: 10%;
@@ -13,18 +13,13 @@
   height: 2.5vw;
 }
 
-.cyfr {
-  width: 16.433em;
-  font-family: Rubik-Re;
-  font-size: 2vw;
-  text-shadow: #000000 1px 0 10px;
-}
-
-.sec_ar {
-  padding-top: 2vw;
-  padding-left: 1.5vw;
-  width: 40vw;
-  height: 4vw;
+.AboutNsd .Btn {
+  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: aliceblue;
+  color: #1e444b;
+  font-size: 1.3vw;
 }
 
 .route {
@@ -35,20 +30,7 @@
   height: 12.7em;
 }
 
-.find2 {
-  background-color: #ffffff;
-  border-radius: 100px;
-  width: 20vw;
-  height: 5vw;
-  font-size: 2vw;
-  text-align: center;
-  margin-left: 0.5em;
-  font-size: 2vw;
-  padding-top: 1em;
-  box-shadow: #000000 1px 0 10px;
-}
-
-.chisla {
+.numbers {
   display: flex;
   font-family: Rubik-B;
   font-size: 15vw;
@@ -65,10 +47,10 @@
 .titles {
   display: flex;
   font-family: Rubik;
-  font-size: 2vw;
+  font-size: 1.5vw;
   position: absolute;
   top: 40%;
-  left: 5%;
+  left: 8%;
   color: aliceblue;
   justify-content: space-between;
   width: 80%;
@@ -123,20 +105,6 @@
   padding-left: 4%;
 }
 
-.foot_sec {
-  position: absolute;
-  display: flex;
-  font-family: Rubik-Re;
-  top: 83%;
-  left: 6.2%;
-  justify-content: space-between;
-  width: 85vw;
-  height: 5vw;
-  color: aliceblue;
-  font-size: 2vw;
-  align-items: end;
-}
-
 .foot_sec_chis {
   position: absolute;
   display: flex;
@@ -149,7 +117,7 @@
   font-size: 4.8vw;
 }
 
-.otkr2 {
+.card {
   position: absolute;
   top: 15vw;
   left: 40vw;
@@ -161,6 +129,45 @@
   font-size: 0.7vw;
   border-radius: 2em;
   padding: 2em;
-  box-shadow: 0px 0px 20px 0px #000000;
   transform: rotate(-20deg);
+}
+
+.score {
+  position: absolute;
+  display: flex;
+  bottom: 10%;
+  left: 6%;
+  justify-content: space-between;
+  flex-flow: wrap;
+  width: 85vw;
+  align-items: flex-end;
+}
+
+.score h2, .score h3 {
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1vw;
+}
+
+.score_num {
+  display: flex;
+  gap: 5vw;
+  align-items: end;
+}
+
+.block_num {
+  display: flex;
+  gap: 1vw;
+  flex-flow: wrap;
+  align-items: flex-end;
+}
+
+.block_num h2 {
+  font-size: 5vw;
+  margin-bottom: 0;
+}
+
+.block_num h3 {
+  font: "Rubik";
 }

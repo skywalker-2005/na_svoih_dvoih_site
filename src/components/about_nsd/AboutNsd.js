@@ -6,24 +6,22 @@ import route_line from "../../svg/route_line.svg";
 import ph_otkr2 from "../../png/ph_otkr2.png";
 import otkr_arr from "../../svg/otkr_arr.svg";
 import time_otkr2 from "../../svg/time_otkr2.svg";
+import Btn from '../btn/Btn';
 
 const AboutNsd = () => {
+  let routesNum = 8, parksNum = 5, reservesNum = 2;
   return (
     <div className="AboutNsd">
       <img src={dark_green} alt="" width="100%" />
-      <div className="flex_second">
-        <div className="cyfr">
-          <span style={{ color: "azure" }}>Цифровая платформа для поиска <br />пеших троп на территории России</span>
-        </div>
+      <div className="first_block">
+        <p style={{ color: "azure" }}>Цифровая платформа для поиска <br />пеших троп на территории России</p>
         <img src={arrow2} alt="" className="sec_ar" />
-        <div className="find2">
-          <span style={{ fontFamily: "Rubik-B", color: "#1e444b" }}>Найти тропу</span>
-        </div>
+        <Btn text='Найти тропу' link='' />
       </div>
       <div className="route">
         <img src={route_line} alt="" width="100%" />
       </div>
-      <div className="chisla">
+      <div className="numbers">
         <div className="a">1</div>
         <div className="b">2</div>
         <div className="c">3</div>
@@ -37,30 +35,30 @@ const AboutNsd = () => {
         <div className="dd">скачай трек</div>
         <div className="ee">отправляйся в путешествие</div>
       </div>
-      <div className="foot_sec">
-        <div style={{ fontFamily: "Rubik-B", fontSize: "2vw", marginRight: "8em" }}>
-          Уже на <br />платформе
+      <div className='score'>
+        <h2>Уже на <br />платформе</h2>
+        <div className='score_num'>
+          <div className='block_num'>
+            <h2>{routesNum}</h2>
+            <h3>троп</h3>
+          </div>
+          <div className='block_num'>
+            <h2>{parksNum}</h2>
+            <h3>нац. парков</h3>
+          </div>
+          <div className='block_num'>
+            <h2>{reservesNum}</h2>
+            <h3>заповедника</h3>
+          </div>
         </div>
-        <div>троп</div>
-        <div>нац. парков</div>
-        <div>заповедника</div>
       </div>
-      <div className="foot_sec_chis">
-        <div>8</div>
-        <div style={{ paddingRight: "6vw" }}>5</div>
-        <div style={{ marginRight: "-0.7em" }}>2</div>
-      </div>
-      <div className="otkr2">
+      <div className="card">
         <img src={ph_otkr2} alt="" width="100%" /><br />
-        <span
-          style={{ fontFamily: "Rubik-B", fontSize: "1vw", textAlign: "center" }}
-          >Софийские озёра</span
-        ><br />
-        <img
-          src={otkr_arr}
-          alt=""
-          style={{ fontFamily: "Rubik-EB", fontSize: "1vw" }}
-        />5 км <img src={time_otkr2} alt="" />2-3 ч <br />
+        <span style={{ fontFamily: "Rubik-B", fontSize: "1vw", textAlign: "center" }}>Софийские озёра</span><br />
+        <img src={otkr_arr} alt="" style={{ width: "0.8vw", marginRight: '0.2vw' }}/>
+        5 км
+        <img src={time_otkr2} alt="" style={{ width: "0.8vw", marginRight: '0.2vw', marginLeft: '0.5vw' }}/>
+        2-3 ч <br />
         Софийские озёра в Архызе — сложный, но очень красивый и посещаемый
         маршрут. Сюда можно добраться в рамках однодневной экскурсии, но
         лучше...

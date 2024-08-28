@@ -3,24 +3,11 @@
 }
 
 .MapBlock img {
-  width: 88%;
-  padding-left: 6.2%;
+  width: 100%;
 }
 
-.goto {
-  background-color: #f0a54e;
-  font-family: Rubik;
-  font-size: 1.3vw;
-  width: 13vw;
-  height: 2vw;
-  padding: 0.7vw 0.4vw;
-  border-radius: 0.5em;
-  color: #f7f7f7;
-  margin-top: 2%;
-  margin-left: 6.2%;
-  margin-bottom: 2vw;
-  text-align: center;
+.MapBlock .Btn {
   position: absolute;
-  bottom: 0.1em;
-  left: 2%;
+  left: 3%;
+  bottom: 7%;
 }

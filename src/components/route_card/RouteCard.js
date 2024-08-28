@@ -2,25 +2,32 @@ import './style.css';
 import bookmark from "../../svg/bookmark.svg";
 import arr_wh from "../../svg/arr_wh.svg";
 import time_wh from "../../svg/time_wh.svg";
+import Btn from '../btn/Btn';
 
 const RouteCard = (props) => {
   return (
     <div className="RouteCard">
-      <img src={props.img} alt="" width="85%" />
-      <div className="first_title">{props.title}</div>
+      <img src={props.img} alt="" style={{ width: "100%", filter: "brightness(80%)" }} />
       <img
         src={bookmark}
         alt=""
-        style={{ position: "absolute", left: "20vw", top: "2vw", width: "2vw" }}
+        style={{ position: "absolute", right: "7%", top: "7%", width: "1.5vw" }}
       />
-      <div className="sec_title">{props.region}</div>
-      <div className="niz_title">
-        <img src={arr_wh} alt="" width="20%" />
-        {props.distance} <br />
-        <img src={time_wh} alt="" width="20%" />
-        {props.duration}
+      <div className='titles'>
+        <div className="first_title">{props.title}</div>
+        <div className="sec_title">{props.region}</div>
       </div>
-      <div className="know_more">Узнать больше {'>'}</div>
+      <div className="niz_title">
+        <div>
+          <img src={arr_wh} alt="" width="12%" />
+          {props.distance}
+        </div>
+        <div>
+          <img src={time_wh} alt="" width="12%" />
+          {props.duration}
+        </div>
+      </div>
+      <Btn text='Узнать больше >' link='' />
     </div>
   );
 }

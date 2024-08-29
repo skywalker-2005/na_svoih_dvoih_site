@@ -261,3 +261,35 @@ p {
   cursor: pointer;
   pointer-events: all;
 }
+
+/* About */
+.about_us_block {
+  margin: 0 5vw;
+  margin-top: 7vw;
+  margin-bottom: 3vw;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 2vw;
+}
+
+.social img {
+  width: 2vw;
+  margin-top: -0.1vw;
+}
+
+.social p {
+  margin: 0;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.soc {
+  display: flex;
+  gap: 1vw;
+}

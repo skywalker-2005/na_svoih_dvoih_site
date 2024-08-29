@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Map from './pages/Map';
 import Oopt from './pages/Oopt';
 import RouteInfo from './pages/RouteInfo';
+import About from './pages/About';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
           <Route path='/map' element={<Map />}/>
           <Route path='/oopt' element={<Oopt />}/>
           <Route path='/routeInfo' element={<RouteInfo />}/>
+          <Route path='/about' element={<About />}/>
         </Routes>
+        
         <Footer />
       </Router>
     </div>

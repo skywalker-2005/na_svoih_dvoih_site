@@ -53,6 +53,12 @@ p {
   margin-bottom: 2vw;
 }
 
+a {
+  font-family: "Rubik-Re";
+  font-size: 1.3vw;
+  text-decoration: none;
+}
+
 /* Home */
 
 .main {

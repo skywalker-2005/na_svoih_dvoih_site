@@ -9,6 +9,7 @@ import Map from './pages/Map';
 import Oopt from './pages/Oopt';
 import RouteInfo from './pages/RouteInfo';
 import About from './pages/About';
+import OoptInfo from './pages/OoptInfo';
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
           <Route path='/map' element={<Map />}/>
           <Route path='/oopt' element={<Oopt />}/>
           <Route path='/routeInfo' element={<RouteInfo />}/>
+          <Route path='/ooptInfo' element={<OoptInfo />}/>
           <Route path='/about' element={<About />}/>
         </Routes>
-        
+
         <Footer />
       </Router>
     </div>

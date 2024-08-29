@@ -1,0 +1,10 @@
+.BackBtn {
+  position: absolute;
+  top: 8vw;
+  left: 5vw;
+  color: #fff;
+}
+
+.BackBtn:hover {
+  cursor: pointer;
+}

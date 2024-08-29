@@ -21,6 +21,9 @@ const Navbar = () => {
       <NavLink className="reef" to='/routeInfo'>
         <li>Тропа</li>
       </NavLink>
+      <NavLink className="reef" to='/ooptInfo'>
+        <li><div>Заповедник</div></li>
+      </NavLink>
       <NavLink className="reef" to='/about'>
         <li><div>О нас</div></li>
       </NavLink>

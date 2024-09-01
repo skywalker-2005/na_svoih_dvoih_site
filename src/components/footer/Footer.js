@@ -15,8 +15,7 @@ const Footer = () => {
       <div className="footer_item">
         <p className="foot_t">Полезные ссылки</p>
         <p className="foot_t2">
-          О проекте<br />
-          Стать партнёром
+          <a href='/about'>О проекте</a>
         </p>
       </div>
       <div className="footer_item">

@@ -24,7 +24,7 @@ const Home = () => {
             return <RouteCard key={route.key} title={route.title} region={route.region} distance={route.distance} duration={route.duration} img={route.img} />;
           })}
         </div>
-        <Btn text='Больше троп >' link='' style={{ backgroundColor: "#DFDFDF", color: "#1E444B" }} />
+        <Btn text='Больше троп >' link='/oopt' style={{ backgroundColor: "#DFDFDF", color: "#1E444B" }} />
 
         <h2>Карта маршрутов</h2>
         <MapBlock />
@@ -32,14 +32,14 @@ const Home = () => {
         <h2>Заповедники и национальные парки</h2>
         <div className="oopt_cards">
           {oopt.map((oopt) => {
-            return <OoptCard key={oopt.key} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.img} />;
+            return <OoptCard key={oopt.key} id={oopt.id} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.img} link={oopt.link}/>;
           })}
           <div className="last">
             <img src={last_vector} alt="" width="100%" />
             <div className="first_title" style={{ left: "2%", top: "18%" }}>
               Больше объектов ООПТ
             </div>
-            <Btn text='Посмотреть все >' link='' />
+            <Btn text='Посмотреть все >' link='/oopt' />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ function BackButton() {
     navigate(-1); // Переходит на предыдущую страницу
   };
 
-  return <a onClick={handleClick} href={handleClick}>{'<'} Назад</a>;
+  return <p onClick={handleClick}>{'<'} Назад</p>;
 }
 
 const BackBtn = () => {

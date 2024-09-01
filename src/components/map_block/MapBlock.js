@@ -6,7 +6,7 @@ const MapBlock = () => {
   return (
     <div className="MapBlock">
       <img src={map} alt="" />
-      <Btn text='Перейти к карте >' link='' />
+      <Btn text='Перейти к карте >' link='/map' />
     </div>
   );
 }

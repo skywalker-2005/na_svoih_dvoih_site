@@ -1,9 +1,13 @@
 .OoptCard {
   position: relative;
+  overflow: hidden;
 }
 
 .OoptCard .first_title {
   position: absolute;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-family: Rubik-B;
   color: aliceblue;
   width: 70%;

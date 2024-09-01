@@ -7,6 +7,10 @@
   font-size: 1.3vw;
 }
 
+.Footer a {
+  color: #ffffff;
+}
+
 .footer_item {
   padding: 3vw 5vw;
 }

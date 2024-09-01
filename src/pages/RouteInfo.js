@@ -3,12 +3,15 @@ import gallery from "../png/gallery.png";
 import screenshot from "../png/Screenshot 2024-05-07 at 16.32 1.png";
 
 import route30V from '../data/oopt/kaukazus_reserve/route30V.js';
+import oopts from '../data/ooptList.js';
 
 import HeaderImg from '../components/header_img/HeaderImg';
 import BriefInf from '../components/brief_inf/BriefInf';
 import Contacts from '../components/contacts/Contacts';
 import MainRouteInf from '../components/main_route_inf/MainRouteInf';
 import MainRoutePoints from '../components/main_route_points/MainRoutePoints';
+
+const oopt = oopts[0];
 
 const RouteInfo = () => {
   return (
@@ -46,10 +49,10 @@ const RouteInfo = () => {
         <div className="oopt_rules">Правила нахождения на территории</div>
 
         <Contacts
-        adress={route30V.adress}
-        phone={route30V.phone}
-        email={route30V.email}
-        site={route30V.site}
+        adress={oopt.adress}
+        phone={oopt.phone}
+        email={oopt.email}
+        site={oopt.site}
         />
       </div>
     </>

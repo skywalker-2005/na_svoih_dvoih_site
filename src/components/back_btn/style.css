@@ -8,3 +8,7 @@
 .BackBtn:hover {
   cursor: pointer;
 }
+
+.BackBtn p {
+  color: aliceblue;
+}

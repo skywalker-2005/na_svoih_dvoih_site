@@ -16,7 +16,7 @@ const AboutNsd = () => {
       <div className="first_block">
         <p style={{ color: "azure" }}>Цифровая платформа для поиска <br />пеших троп на территории России</p>
         <img src={arrow2} alt="" className="sec_ar" />
-        <Btn text='Найти тропу' link='' />
+        <Btn text='Найти тропу' link='/oopt' />
       </div>
       <div className="route">
         <img src={route_line} alt="" width="100%" />

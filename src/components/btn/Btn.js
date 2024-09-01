@@ -1,8 +1,9 @@
 import './style.css';
 
-const Btn = ({text, link}) => {
+const Btn = ({text, link, id}) => {
   return (
-    <a href={link} className='Btn'>{text}</a>
+    // <p onClick={() => history.push('/ooptInfo' + '/' + id)}>{text}</p>
+    <a href={`/${link}${id}`} className='Btn' id={id}>{text}</a>
   );
 }
  

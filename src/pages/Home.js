@@ -32,7 +32,7 @@ const Home = () => {
         <h2>Заповедники и национальные парки</h2>
         <div className="oopt_cards">
           {oopt.map((oopt) => {
-            return <OoptCard key={oopt.key} id={oopt.id} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.img} link={oopt.link}/>;
+            return <OoptCard key={oopt.key} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.img} link={`/ooptInfo/${oopt.id}`}/>;
           })}
           <div className="last">
             <img src={last_vector} alt="" width="100%" />

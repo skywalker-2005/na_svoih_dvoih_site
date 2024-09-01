@@ -10,7 +10,7 @@ import minus from '../svg/minus.svg';
 import navi from '../svg/navi.svg';
 import background from '../png/Screenshot 2024-05-07 at 16.32 1.png';
 
-const Map = () => {
+const MapPage = () => {
   const imgStyle = { width: '1vw', marginRight: '0.5vw' };
   const imgStyleLarge = { width: '1.8vw' };
 
@@ -59,4 +59,4 @@ const Map = () => {
   );
 }
 
-export default Map;
+export default MapPage;

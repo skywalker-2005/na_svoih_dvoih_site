@@ -1,17 +1,19 @@
 import '../styles/style.css';
 import gallery from "../png/gallery.png";
 import screenshot from "../png/Screenshot 2024-05-07 at 16.32 1.png";
+import { useParams } from 'react-router-dom';
 
 import oopt from '../data/ooptList.js';
 
 import HeaderImg from '../components/header_img/HeaderImg';
 import Contacts from '../components/contacts/Contacts';
 
+window.scrollTo(0, 0);
 
-const OoptInfo = ({match}) => {
-  const { props } = match;
-  // console.log(props.link);
-  const reserve = oopt[props.id];
+const OoptInfo = () => {
+  const { type } = useParams();
+  console.log(type);
+  const reserve = oopt[type-1];
   return (
     <>
       <HeaderImg title={reserve.title} type={reserve.type} ooptType={reserve.ooptType} routesNum={reserve.routesNum} region={reserve.region} img={reserve.imgFull}/>

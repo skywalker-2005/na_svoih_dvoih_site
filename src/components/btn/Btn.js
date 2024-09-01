@@ -1,9 +1,9 @@
 import './style.css';
+import { NavLink } from 'react-router-dom';
 
-const Btn = ({text, link, id}) => {
+const Btn = ({text, link}) => {
   return (
-    // <p onClick={() => history.push('/ooptInfo' + '/' + id)}>{text}</p>
-    <a href={`/${link}${id}`} className='Btn' id={id}>{text}</a>
+    <NavLink to={link} className='Btn'>{text}</NavLink>
   );
 }
  

@@ -9,9 +9,7 @@ import BackBtn from '../back_btn/BackBtn';
 const HeaderImg = (props) => {
   return (
     <div className="HeaderImg">
-      {/* <div> */}
-        <img src={props.img} alt='' style={{ width: "100vw", filter: "brightness(60%)", height: '50vw'}}/>
-      {/* </div> */}
+      <img src={props.img} alt='' style={{ width: "100vw", filter: "brightness(60%)", height: '50vw'}}/>
       <BackBtn />
       <div className="info_flex">
         <div className="main_rt">{props.title}</div>
@@ -19,15 +17,15 @@ const HeaderImg = (props) => {
         {props.type === 'маршрут' && (
           <div className="foot_rt">
             <div className='item'>
-              <img src={arrWh} alt='' style={{ width: "1.5vw" }} />
+              <div><img src={arrWh} alt='' style={{ width: "1.5vw" }} /></div>
               <div>{props.distance}</div>
             </div>
             <div className='item'>
-              <img src={timeWh} alt='' style={{ width: "1.5vw" }}/>
+              <div><img src={timeWh} alt='' style={{ width: "1.5vw" }}/></div>
               <div>{props.duration}</div>
             </div>
             <div className='item'>
-              <img src={human} alt='' style={{ width: "1vw" }} />
+              <div><img src={human} alt='' style={{ width: "1vw" }} /></div>
               <div>{props.wayType}</div>
             </div>
           </div>
@@ -35,15 +33,15 @@ const HeaderImg = (props) => {
         {props.type === 'ООПТ' && (
           <div className="foot_rt">
             <div className='item'>
-              <img src={bear} alt='' style={{ width: "1.5vw", color: "#fff"}} />
+              <div style={{marginRight: '0.5vw'}}><img src={bear} alt='' style={{ height: "1.2vw", marginTop: '0.2vw' }} /></div>
               <div>{props.ooptType}</div>
             </div>
             <div className='item'>
-              <img src={arrWh} alt='' style={{ width: "1.5vw" }}/>
+              <div><img src={arrWh} alt='' style={{ height: "1.5vw", marginTop: '0.2vw' }}/></div>
               <div>{props.routesNum}</div>
             </div>
             <div className='item'>
-              <img src={point} alt='' style={{ width: "1vw", color: "#fff" }} />
+              <div><img src={point} alt='' style={{ height: "1.5vw", marginTop: '0.2vw' }} /></div>
               <div>{props.region}</div>
             </div>
           </div>

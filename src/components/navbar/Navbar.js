@@ -12,7 +12,7 @@ const Navbar = () => {
       <NavLink className="reef" to='/'>
         <li>Главная</li>
       </NavLink>
-      <NavLink className="reef" to='/map'>
+      <NavLink className="reef" to='/mapPage'>
         <li>Карта</li>
       </NavLink>
       <NavLink className="reef" to='/oopt'>
@@ -20,9 +20,6 @@ const Navbar = () => {
       </NavLink>
       <NavLink className="reef" to='/routeInfo'>
         <li>Тропа</li>
-      </NavLink>
-      <NavLink className="reef" to='/ooptInfo'>
-        <li><div>Заповедник</div></li>
       </NavLink>
       <NavLink className="reef" to='/about'>
         <li><div>О нас</div></li>

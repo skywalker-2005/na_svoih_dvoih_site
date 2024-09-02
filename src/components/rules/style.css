@@ -1,0 +1,13 @@
+.Rules {
+  border-radius: 0.5rem;
+  font-size: 1vw;
+  font-family: Rubik;
+  padding: 0.5vw;
+  margin: 0.2vw;
+  margin-bottom: 2vw;
+  padding: 1vw;
+  color: #1e444b;
+  font-size: 1.3vw;
+  border: #1e444b 3px solid;
+  background-color: rgba(139, 69, 19, 0);
+}

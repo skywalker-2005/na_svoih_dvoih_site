@@ -1,6 +1,23 @@
 .OoptCard {
   position: relative;
   overflow: hidden;
+  height: 11vw;
+  width: 100%;
+  cursor: pointer;
+  flex: 0 0 auto; /* лучшая вещь */
+  border-radius: 1.2vw;
+}
+
+.OoptCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2vw;
+  background-color: rgba(0, 0, 0, 0.2); /* Черный цвет с 50% прозрачностью */
+  z-index: 0;
 }
 
 .OoptCard .first_title {

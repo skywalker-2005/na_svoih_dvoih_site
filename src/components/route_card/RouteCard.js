@@ -6,8 +6,7 @@ import Btn from '../btn/Btn';
 
 const RouteCard = (props) => {
   return (
-    <div className="RouteCard">
-      <img src={props.img} alt="" style={{ width: "100%", filter: "brightness(80%)" }} />
+    <div className="RouteCard" style={{ backgroundImage: `url(${props.img})`, backgroundSize: 'cover'}}>
       <img
         src={bookmark}
         alt=""
@@ -27,7 +26,7 @@ const RouteCard = (props) => {
           {props.duration}
         </div>
       </div>
-      <Btn text='Узнать больше >' link='' />
+      <Btn text='Узнать больше >' link={props.link} />
     </div>
   );
 }

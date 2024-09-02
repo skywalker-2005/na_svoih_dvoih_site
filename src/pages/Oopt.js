@@ -10,7 +10,7 @@ const Oopt = () => {
       <OoptSearchBar />
       <div className="oopt_cards" style={{ paddingTop: "2.5vw", margin: "0 5vw", marginBottom: "2vw"}}>
         {oopt.map((oopt) => {
-          return <OoptCard key={oopt.key} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.img} link={`/ooptInfo/${oopt.id}`}/>;
+          return <OoptCard key={oopt.key} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.images[oopt.images.length-1]} link={`/ooptInfo/${oopt.id}`}/>;
         })}
       </div>
     </>

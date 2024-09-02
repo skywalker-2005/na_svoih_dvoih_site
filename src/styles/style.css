@@ -62,16 +62,21 @@ a {
 /* Home */
 
 .main {
-  margin: 0 5vw;
+  padding: 0 5vw;
   justify-content: center;
 }
 
 .route_cards {
   display: flex;
-  justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
   margin-bottom: 2vw;
   width: 100%;
-  gap: 1.5vw;
+}
+
+.route_cards::-webkit-scrollbar {
+  display: none;
 }
 
 /* последняя плашка на блоке оопт */
@@ -89,7 +94,7 @@ a {
 .oopt_cards {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5em;
+  row-gap: 1em;
   margin-bottom: 2vw;
 }
 

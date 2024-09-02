@@ -8,8 +8,8 @@ import BackBtn from '../back_btn/BackBtn';
 
 const HeaderImg = (props) => {
   return (
-    <div className="HeaderImg">
-      <img src={props.img} alt='' style={{ width: "100vw", filter: "brightness(60%)", height: '50vw'}}/>
+    <div className="HeaderImg" style={{ backgroundImage: `url(${props.img})`, backgroundSize: 'cover',  backgroundPosition: 'center' }}>
+      {/* <img src={props.img} alt='' style={{ width: "100vw", filter: "brightness(60%)", height: '50vw'}}/> */}
       <BackBtn />
       <div className="info_flex">
         <div className="main_rt">{props.title}</div>

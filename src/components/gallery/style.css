@@ -1,17 +1,14 @@
-.gallery-container {
+.Gallery {
   width: 88vw;
   margin: 0 auto;
-}
-
-.image-wrapper {
   display: flex;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  -webkit-scrollbar: none;
-  margin-bottom: 1vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 2vw;
+  width: 100%;
 }
 
-.image-wrapper::-webkit-scrollbar {
+.Gallery::-webkit-scrollbar {
   display: none;
 }
 
@@ -19,29 +16,7 @@
   width: 20vw;
   height: 12vw;
   object-fit: cover;
-  margin-right: 1vw;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  border-radius: 0.5vw;
+  margin: 0 1vw;
 }
-
-.image:hover {
-  transform: scale(1.05);
-}
-
-/* Адаптивность для мобильных устройств */
-/* @media (max-width: 600px) {
-  .gallery-container {
-    width: 90%;
-  }
-
-  .image-wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .image {
-    width: 45%;
-    height: 45%;
-    margin: 5px;
-  }
-} */

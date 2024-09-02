@@ -8,7 +8,6 @@ import museum from "../svg/museum.svg";
 import plus from "../svg/plus.svg";
 import minus from "../svg/minus.svg";
 import navi from "../svg/navi.svg";
-import background from "../../qgis2web_2024_09_02-15_42_38_916932";
 
 const MapPage = () => {
   const imgStyle = { width: "1vw", marginRight: "0.5vw" };
@@ -16,13 +15,11 @@ const MapPage = () => {
 
   return (
     <>
-      <a href="route_info.html" target="_blank">
-        <img
-          src={background}
-          alt=""
-          style={{ width: "100%", height: "100%" }}
-        />
-      </a>
+      <object
+        data="../qgis2web_2024_09_02-15_42_38_916932/index.html"
+        width="100%"
+        height="100%"
+      ></object>
       <div className="search_wrap">
         <div className="search">
           <div className="search_item sit1">

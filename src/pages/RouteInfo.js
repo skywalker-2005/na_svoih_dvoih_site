@@ -23,7 +23,7 @@ const RouteInfo = () => {
 
       <Gallery images={route.images}/>
       
-      <BriefInf level={route.level} region={route.region} oopt={route.oopt} />
+      <BriefInf level={route.level} region={route.region} oopt={reserve.title} />
       
       <div className="rtinfo_flex">
         <MainRouteInf

@@ -22,11 +22,11 @@ const OoptInfo = () => {
       <div className="rtinfo_flex">
         <p>{reserve.shortDescription}</p>
 
-        {/* <div className="route_cards">
+        <div className="route_cards">
           {reserve.routes.map((route) => {
-            return <RouteCard key={route.key} title={route.title} region={route.region} distance={route.distance} duration={route.duration} img={route.images[route.images.length-1]} link={`/ooptInfo/${type}/routeInfo/${route.id}`}/>;
+            return <RouteCard key={route.key} title={route.title} region={route.region} distance={route.distance} duration={route.duration} img={route.images[route.images.length-1]} link={`/ooptInfo/${type}/routeInfo/${route.key}`}/>;
           })}
-        </div> */}
+        </div>
 
         <h3>Основные моменты</h3>
         <p>{reserve.mainMoments}</p>

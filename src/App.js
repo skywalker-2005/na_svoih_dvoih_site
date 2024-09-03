@@ -34,7 +34,7 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/mapPage' element={<MapPage />}/>
           <Route path='/oopt' element={<Oopt />}/>
-          <Route path='/routeInfo/:type' element={<RouteInfo />}/>
+          <Route path='/ooptInfo/:type/routeInfo/:id' element={<RouteInfo />}/>
           <Route path='/ooptInfo/:type' element={<OoptInfo />}/>
           <Route path='/about' element={<About />}/>
         </Routes>

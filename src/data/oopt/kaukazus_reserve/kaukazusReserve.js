@@ -1,111 +1,18 @@
-import img1 from './img/img1.jpg';
-import img2 from './img/img2.jpg';
-import img3 from './img/img3.jpg';
-import img4 from './img/img4.jpg';
-import img5 from './img/img5.jpg';
-import img6 from './img/img6.jpg';
-import img7 from './img/img7.jpg';
+// Импорт изображений с использованием require.context или динамического импорта
+const importImages = (context) => context.keys().map(context);
 
-import img_route30V_1 from './img_route30V/img1.jpg';
-import img_route30V_2 from './img_route30V/img2.jpg';
-import img_route30V_3 from './img_route30V/img3.jpg';
-import img_route30V_4 from './img_route30V/img4.jpg';
-import img_route30V_5 from './img_route30V/img5.jpg';
-import img_route30V_6 from './img_route30V/img6.jpg';
-import img_route30V_7 from './img_route30V/img7.jpg';
-
-import img_route13_1 from './img_route13/img1.jpg';
-import img_route13_2 from './img_route13/img2.jpg';
-import img_route13_3 from './img_route13/img3.jpg';
-import img_route13_4 from './img_route13/img4.jpg';
-import img_route13_5 from './img_route13/img5.jpg';
-import img_route13_6 from './img_route13/img6.jpg';
-import img_route13_7 from './img_route13/img7.jpg';
-
-import img_route30G_1 from './img_route30G/img1.jpg';
-import img_route30G_2 from './img_route30G/img2.jpg';
-import img_route30G_3 from './img_route30G/img3.jpg';
-import img_route30G_4 from './img_route30G/img4.jpg';
-import img_route30G_5 from './img_route30G/img5.jpg';
-import img_route30G_6 from './img_route30G/img6.jpg';
-import img_route30G_7 from './img_route30G/img7.jpg';
-
-import img_route30B_1 from './img_route30B/img1.jpg';
-import img_route30B_2 from './img_route30B/img2.jpg';
-import img_route30B_3 from './img_route30B/img3.jpg';
-import img_route30B_4 from './img_route30B/img4.jpg';
-import img_route30B_5 from './img_route30B/img5.jpg';
-import img_route30B_6 from './img_route30B/img6.jpg';
-import img_route30B_7 from './img_route30B/img7.jpg';
-
-import img_route8A_1 from './img_route8A/img1.jpg';
-import img_route8A_2 from './img_route8A/img2.jpg';
-import img_route8A_3 from './img_route8A/img3.jpg';
-import img_route8A_4 from './img_route8A/img4.jpg';
-import img_route8A_5 from './img_route8A/img5.jpg';
-import img_route8A_6 from './img_route8A/img6.jpg';
-import img_route8A_7 from './img_route8A/img7.jpg';
-
-import img_route9_1 from './img_route9/img1.jpg';
-import img_route9_2 from './img_route9/img2.jpg';
-import img_route9_3 from './img_route9/img3.jpg';
-import img_route9_4 from './img_route9/img4.jpg';
-import img_route9_5 from './img_route9/img5.jpg';
-import img_route9_6 from './img_route9/img6.jpg';
-import img_route9_7 from './img_route9/img7.jpg';
-
-import img_route30A_1 from './img_route30A/img1.jpg';
-import img_route30A_2 from './img_route30A/img2.jpg';
-import img_route30A_3 from './img_route30A/img3.jpg';
-import img_route30A_4 from './img_route30A/img4.jpg';
-import img_route30A_5 from './img_route30A/img5.jpg';
-import img_route30A_6 from './img_route30A/img6.jpg';
-import img_route30A_7 from './img_route30A/img7.jpg';
-
-import img_route8_1 from './img_route8/img1.jpg';
-import img_route8_2 from './img_route8/img2.jpg';
-import img_route8_3 from './img_route8/img3.jpg';
-import img_route8_4 from './img_route8/img4.jpg';
-import img_route8_5 from './img_route8/img5.jpg';
-import img_route8_6 from './img_route8/img6.jpg';
-import img_route8_7 from './img_route8/img7.jpg';
-
-import img_route15_1 from './img_route15/img1.jpg';
-import img_route15_2 from './img_route15/img2.jpg';
-import img_route15_3 from './img_route15/img3.jpg';
-import img_route15_4 from './img_route15/img4.jpg';
-import img_route15_5 from './img_route15/img5.jpg';
-import img_route15_6 from './img_route15/img6.jpg';
-import img_route15_7 from './img_route15/img7.jpg';
-
-import img_route13_1_1 from './img_route13_1/img1.jpg';
-import img_route13_1_2 from './img_route13_1/img2.jpg';
-import img_route13_1_3 from './img_route13_1/img3.jpg';
-import img_route13_1_4 from './img_route13_1/img4.jpg';
-import img_route13_1_5 from './img_route13_1/img5.jpg';
-import img_route13_1_6 from './img_route13_1/img6.jpg';
-import img_route13_1_7 from './img_route13_1/img7.jpg';
-
-import img_route14_1 from './img_route14/img1.jpg';
-import img_route14_2 from './img_route14/img2.jpg';
-import img_route14_3 from './img_route14/img3.jpg';
-import img_route14_4 from './img_route14/img4.jpg';
-import img_route14_5 from './img_route14/img5.jpg';
-import img_route14_6 from './img_route14/img6.jpg';
-import img_route14_7 from './img_route14/img7.jpg';
-
-export const oopt_1_images = [img1, img2, img3, img4, img5, img6, img7];
-export const img_route30V = [img_route30V_1, img_route30V_2, img_route30V_3, img_route30V_4, img_route30V_5, img_route30V_6, img_route30V_7];
-export const img_route13 = [img_route13_1, img_route13_2, img_route13_3, img_route13_4, img_route13_5, img_route13_6, img_route13_7];
-export const img_route30G = [img_route30G_1, img_route30G_2, img_route30G_3, img_route30G_4, img_route30G_5, img_route30G_6, img_route30G_7];
-export const img_route30B = [img_route30B_1, img_route30B_2, img_route30B_3, img_route30B_4, img_route30B_5, img_route30B_6, img_route30B_7];
-export const img_route8A = [img_route8A_1, img_route8A_2, img_route8A_3, img_route8A_4, img_route8A_5, img_route8A_6, img_route8A_7];
-export const img_route9 = [img_route9_1, img_route9_2, img_route9_3, img_route9_4, img_route9_5, img_route9_6, img_route9_7];
-export const img_route30A = [img_route30A_1, img_route30A_2, img_route30A_3, img_route30A_4, img_route30A_5, img_route30A_6, img_route30A_7];
-export const img_route8 = [img_route8_1, img_route8_2, img_route8_3, img_route8_4, img_route8_5, img_route8_6, img_route8_7];
-export const img_route15 = [img_route15_1, img_route15_2, img_route15_3, img_route15_4, img_route15_5, img_route15_6, img_route15_7];
-export const img_route131 = [img_route13_1_1, img_route13_1_2, img_route13_1_3, img_route13_1_4, img_route13_1_5, img_route13_1_6, img_route13_1_7];
-export const img_route14 = [img_route14_1, img_route14_2, img_route14_3, img_route14_4, img_route14_5, img_route14_6, img_route14_7];
+export const oopt_1_images = importImages(require.context('./img', false, /\.(jpg)$/));
+export const img_route30V = importImages(require.context('./img_route30V', false, /\.(jpg)$/));
+export const img_route13 = importImages(require.context('./img_route13', false, /\.(jpg)$/));
+export const img_route30G = importImages(require.context('./img_route30G', false, /\.(jpg)$/));
+export const img_route30B = importImages(require.context('./img_route30B', false, /\.(jpg)$/));
+export const img_route8A = importImages(require.context('./img_route8A', false, /\.(jpg)$/));
+export const img_route9 = importImages(require.context('./img_route9', false, /\.(jpg)$/));
+export const img_route30A = importImages(require.context('./img_route30A', false, /\.(jpg)$/));
+export const img_route8 = importImages(require.context('./img_route8', false, /\.(jpg)$/));
+export const img_route15 = importImages(require.context('./img_route15', false, /\.(jpg)$/));
+export const img_route131 = importImages(require.context('./img_route131', false, /\.(jpg)$/));
+export const img_route14 = importImages(require.context('./img_route14', false, /\.(jpg)$/));
 
 export const oopt_1_routes = [
   {
@@ -117,7 +24,7 @@ export const oopt_1_routes = [
     duration: '4 д',
     wayType: "пеший, конный",
     images: img_route30V,
-    level: 'низкий',
+    level: 'rлегкий',
     oopt: 'Кавказский заповедник',
     important: 'При оформлении пропуска онлайн установлено ограничение выхода на маршрут до 1 ноября. Вся актуальная информация будет появляться на сайте заповедника.',
     line: 'КПП Лагонаки – перевал Абадзешский – верховье реки Цице – приют Фишт – перевал Армянский – перевал Гузерипльский – КПП Лагонаки',

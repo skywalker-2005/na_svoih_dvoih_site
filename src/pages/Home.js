@@ -20,7 +20,7 @@ const Home = () => {
         <h2>Новые тропы</h2>
         <div className="route_cards">
           {reserve.routes.map((route) => {
-            return <RouteCard key={route.key} title={route.title} region={route.region} distance={route.distance} duration={route.duration} img={route.images[route.images.length-1]} link={`/routeInfo/${route.id}`}/>;
+            return <RouteCard key={route.key} title={route.title} region={route.region} distance={route.distance} duration={route.duration} img={route.images[route.images.length-1]} link={`/ooptInfo/${reserve.id}/routeInfo/${route.key}`}/>;
           })}
         </div>
         <Btn text='Больше троп >' link='/oopt'/>

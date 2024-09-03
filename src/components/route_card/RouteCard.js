@@ -6,7 +6,7 @@ import Btn from '../btn/Btn';
 
 const RouteCard = (props) => {
   return (
-    <div className="RouteCard" style={{ backgroundImage: `url(${props.img})`, backgroundSize: 'cover'}}>
+    <div className="RouteCard" style={{ backgroundImage: `url(${props.img})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
       <img
         src={bookmark}
         alt=""

@@ -304,3 +304,59 @@ a {
   display: flex;
   gap: 1vw;
 }
+
+/* Oopt */
+.OoptSearchBar {
+  width: 100vw;
+  height: 23vw;
+  background-color: #1e444b;
+  flex: 0 0 auto; /* лучшая вещь */
+  align-items: center;
+}
+
+.OoptSearchBar h1 {
+  font-size: 3vw;
+  margin-bottom: 3vw;
+  font-family: 'Rubik-B';
+}
+
+.oopt_wrap {
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 8vw;
+}
+
+.oopt_flex {
+  display: flex;
+  flex-direction: column;
+  font-family: Rubik-Re;
+  color: #f7f7f7;
+  font-size: 1vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.oopt_info {
+  border-radius: 0.5rem;
+  font-size: 1vw;
+  font-family: Rubik;
+  align-content: center;
+  padding: 0.5vw 2vw;
+  box-sizing: content-box;
+  background-color: #ffffff;
+  overflow: hidden;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+} 
+
+.input-group {
+  display: flex;
+  gap: 5vw;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.selectItem {
+  width: 16vw;
+}

@@ -1,6 +1,7 @@
 .Footer {
   display: flex;
   background-color: #1e444b;
+  margin-top: auto;
 }
 
 .Footer p {

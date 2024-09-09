@@ -7,6 +7,7 @@ import people from "../../svg/people.svg";
 const MainRoutePoints = (props) => {
   return (
     <div className='MainRoutePoints'>
+      {props.safety && 
       <div className='route_point'>
         <img src={bag} alt=""/>
         <div>
@@ -14,7 +15,9 @@ const MainRoutePoints = (props) => {
           <p>{props.safety}</p>
         </div>
       </div>
+      }
 
+      {props.shedule && 
       <div className='route_point'>
         <img src={timer} alt=""/>
         <div>
@@ -22,7 +25,9 @@ const MainRoutePoints = (props) => {
           <p>{props.shedule}</p>
         </div>
       </div>
+      }
 
+      {props.comfort && 
       <div className='route_point'>
         <img src={home} alt=""/>
         <div>
@@ -30,7 +35,9 @@ const MainRoutePoints = (props) => {
           <p>{props.comfort}</p>
         </div>
       </div>
+      }
 
+      {props.size &&
       <div className='route_point'>
         <img src={people} alt=""/>
         <div>
@@ -38,6 +45,7 @@ const MainRoutePoints = (props) => {
           <p>{props.size}</p>
         </div>
       </div>
+      }
     </div>
   );
 }

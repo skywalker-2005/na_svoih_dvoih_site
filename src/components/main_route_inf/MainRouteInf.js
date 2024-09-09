@@ -27,7 +27,7 @@ const MainRouteInf = (props) => {
           <p>{props.way}</p>
         </div>
       )}
-      {props.important && (
+      {props.night && (
         <div>
           <h3>Места стоянок (ночевок)</h3>
           <p>{props.night}</p>

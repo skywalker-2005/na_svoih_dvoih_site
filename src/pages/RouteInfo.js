@@ -48,7 +48,9 @@ const RouteInfo = () => {
         <div><img src={screenshot} alt="" style={{ width: "85vw", height: "50vh" }}/></div>
         <div style={{ height: "2vw" }}></div>
         
+        {reserve.rules && 
         <Rules rules={reserve.rules} />
+        }
 
         <Contacts
         adress={reserve.adress}

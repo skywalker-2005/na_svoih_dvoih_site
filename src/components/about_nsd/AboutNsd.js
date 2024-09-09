@@ -63,11 +63,11 @@ const AboutNsd = () => {
         <div className='score_num'>
           <div className='block_num'>
             <h2>{countRoutes(oopt)}</h2>
-            <h3>троп</h3>
+            <h3>тропы</h3>
           </div>
           <div className='block_num'>
             <h2>{countParks(oopt)}</h2>
-            <h3>нац. парк</h3>
+            <h3>нац. парка</h3>
           </div>
           <div className='block_num'>
             <h2>{countReserves(oopt)}</h2>

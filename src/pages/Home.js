@@ -30,7 +30,8 @@ const Home = () => {
 
         <h2>Заповедники и национальные парки</h2>
         <div className="oopt_cards">
-          {oopt.map((oopt) => {
+          {oopt.map((oopt, i) => {
+            if (i > 3) return null;
             return <OoptCard key={oopt.key} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.images[oopt.images.length-1]} link={`/ooptInfo/${oopt.id}`}/>;
           })}
           <div className="last">

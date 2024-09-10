@@ -8,8 +8,31 @@ import otkr_arr from "../../svg/otkr_arr.svg";
 import time_otkr2 from "../../svg/time_otkr2.svg";
 import Btn from '../btn/Btn';
 
+import oopt from '../../data/ooptList.js';
+
+const countRoutes = (oopt) => {
+  return oopt.reduce((acc, oopt) => acc + oopt.routes.length, 0);
+}
+
+const countParks = (oopt) => {
+  return oopt.reduce((acc, oopt) => {
+    if (oopt.ooptType === "Национальный парк")
+      return acc + 1;
+    else 
+      return acc;
+  }, 0);
+}
+
+const countReserves = (oopt) => {
+  return oopt.reduce((acc, oopt) => {
+    if (oopt.ooptType === "Заповедник")
+      return acc + 1;
+    else 
+      return acc;
+  }, 0);
+}
+
 const AboutNsd = () => {
-  let routesNum = 8, parksNum = 5, reservesNum = 2;
   return (
     <div className="AboutNsd">
       <img src={dark_green} alt="" width="100%" />
@@ -39,16 +62,16 @@ const AboutNsd = () => {
         <h2>Уже на <br />платформе</h2>
         <div className='score_num'>
           <div className='block_num'>
-            <h2>{routesNum}</h2>
-            <h3>троп</h3>
+            <h2>{countRoutes(oopt)}</h2>
+            <h3>тропы</h3>
           </div>
           <div className='block_num'>
-            <h2>{parksNum}</h2>
-            <h3>нац. парков</h3>
+            <h2>{countParks(oopt)}</h2>
+            <h3>нац. парка</h3>
           </div>
           <div className='block_num'>
-            <h2>{reservesNum}</h2>
-            <h3>заповедника</h3>
+            <h2>{countReserves(oopt)}</h2>
+            <h3>заповедников</h3>
           </div>
         </div>
       </div>

@@ -317,7 +317,7 @@ a {
 .OoptSearchBar h1 {
   font-size: 3vw;
   margin-bottom: 3vw;
-  font-family: 'Rubik-B';
+  font-family: "Rubik-B";
 }
 
 .oopt_wrap {
@@ -348,7 +348,7 @@ a {
   color: #ffffff;
   text-align: center;
   cursor: pointer;
-} 
+}
 
 .input-group {
   display: flex;

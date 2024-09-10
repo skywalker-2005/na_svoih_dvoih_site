@@ -16,12 +16,6 @@ const MapPage = () => {
   return (
     <>
       <div className="search_wrap">
-        <object
-          data="../qgis2web_2024_09_02-15_42_38_916932/index.html"
-          width="100%"
-          height="100%"
-          aria-label="упс, ошибочка"
-        ></object>
         <div className="search">
           <div className="search_item sit1">
             <img src={search} alt="" style={{ ...imgStyle, opacity: 1 }} />

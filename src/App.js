@@ -1,15 +1,15 @@
 import "./styles/style.css";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
-import Home from './pages/Home';
-import MapPage from './pages/MapPage';
-import Oopt from './pages/Oopt';
-import RouteInfo from './pages/RouteInfo';
-import About from './pages/About';
-import OoptInfo from './pages/OoptInfo';
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home";
+import MapPage from "./pages/MapPage";
+import Oopt from "./pages/Oopt";
+import RouteInfo from "./pages/RouteInfo";
+import About from "./pages/About";
+import OoptInfo from "./pages/OoptInfo";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -22,7 +22,7 @@ const ScrollToTop = () => {
   }, [pathname]);
 
   return null;
-}
+};
 
 function App() {
   return (
@@ -31,12 +31,12 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/mapPage' element={<MapPage />}/>
-          <Route path='/oopt' element={<Oopt />}/>
-          <Route path='/ooptInfo/:type/routeInfo/:id' element={<RouteInfo />}/>
-          <Route path='/ooptInfo/:type' element={<OoptInfo />}/>
-          <Route path='/about' element={<About />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/mapPage" element={<MapPage />} />
+          <Route path="/oopt" element={<Oopt />} />
+          <Route path="/ooptInfo/:type/routeInfo/:id" element={<RouteInfo />} />
+          <Route path="/ooptInfo/:type" element={<OoptInfo />} />
+          <Route path="/about" element={<About />} />
         </Routes>
 
         <Footer />

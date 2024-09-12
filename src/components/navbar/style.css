@@ -38,3 +38,78 @@ li {
   width: 10vw;
   text-decoration: none;
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.5em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  background-color: #1E444B;
+  height: 4px;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Стили для меню на больших экранах */
+.menu {
+  display: flex;
+  gap: 2em;
+}
+
+@media (max-width: 425px) {
+  .Navbar {
+    height: 5vh;
+    font-size: 3vw;
+  }
+
+  .logo {
+    width: 20vw;
+    padding: 1.5vw 3vw;
+  }
+
+  .menu {
+    height: 20vh;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    transition: all 0.3s ease;
+    border-radius: 2vw;
+  }
+
+  .menu.open {
+    display: flex;
+    position: absolute;
+    width: 40vw;
+    right: 0;
+    top: 6vh;
+  }
+  
+  .menu.open li {
+    font-size: 2.5vw;
+  }
+
+  .hamburger {
+    display: flex;
+    margin: auto 0;
+  }
+
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

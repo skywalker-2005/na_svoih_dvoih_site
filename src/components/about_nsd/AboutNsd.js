@@ -59,7 +59,7 @@ const AboutNsd = () => {
         <div className="ee">отправляйся в путешествие</div>
       </div>
       <div className='score'>
-        <h2>Уже на <br />платформе</h2>
+        <h2>Уже на платформе</h2>
         <div className='score_num'>
           <div className='block_num'>
             <h2>{countRoutes(oopt)}</h2>

@@ -100,6 +100,9 @@ a {
 
 .last {
   position: relative;
+  flex: 0 0 auto; /* лучшая вещь */
+  height: 11vw;
+  width: 100%;
 }
 
 .last .Btn {
@@ -354,9 +357,64 @@ a {
   display: flex;
   gap: 5vw;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90vw;
 }
 
 .selectItem {
   width: 16vw;
+}
+@media (max-width: 425px) {
+  h2 {
+    font-size: 4vw;
+    padding-bottom: 3vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+  
+  p {
+    font-size: 3vw;
+  }
+  
+  a {
+    font-size: 3vw;
+  }
+
+  .oopt_cards {
+    display: flex;
+    overflow-x: auto;
+    flex-direction:row;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    margin-bottom: 8vw;
+    width: 100%;
+  }
+  .oopt_cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .last .first_title {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    font-family: Rubik-B;
+    color: aliceblue;
+    font-size: 3.3vw;
+  }
+  
+  .last {
+    position: relative;
+    width: 45vw;
+    height: 60vw;
+    border-radius: 2vw;
+    cursor: pointer;
+    flex: 0 0 auto; /* лучшая вещь */
+  }
+  
+  .last .Btn {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+  }
 }

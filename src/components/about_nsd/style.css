@@ -171,3 +171,42 @@
 .block_num h3 {
   font: "Rubik";
 }
+
+@media (max-width: 425px) {
+  .AboutNsd .first_block img {
+    display: none !important;
+  }
+
+  .AboutNsd .first_block {
+    left: 6vw;
+    right: 6vw;
+    height: auto;
+  }
+
+  .AboutNsd .first_block .Btn {
+    padding-bottom: 1.5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 2.5vw ;
+  }
+  .AboutNsd .route, .numbers, .titles, .card {
+    display: none;
+  }
+  .AboutNsd .score {
+    top: 20vw;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .AboutNsd .score .block_num h2 {
+    font-size: 8vw;
+  }
+  .AboutNsd .score .block_num {
+    justify-content: center;
+  }
+  .AboutNsd .score .score_num {
+    padding-top: 5vw;
+  }
+}

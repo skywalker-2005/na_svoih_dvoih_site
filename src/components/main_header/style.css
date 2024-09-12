@@ -6,6 +6,7 @@
 
 .layers {
   height: 100vh;
+  /* width: 100vw; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +22,7 @@
   background-position: center;
   will-change: transform;
 }
+
 
 .layer-back {
   transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
@@ -56,4 +58,33 @@
   position: absolute;
   bottom: 10%;
   left: 46%;
+}
+@media (max-width: 425px) {
+  .layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .layer {
+    height: 100%;
+    /* width: 100%; */
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+  }
+  .main_text {
+    position: absolute;
+    color: #ffffff;
+    font-family: Rubik;
+    left: 3%;
+    top: 40%;
+    font-size: 8vw;
+    line-height: 0.9;
+    width: 9.5em;
+  }  
 }

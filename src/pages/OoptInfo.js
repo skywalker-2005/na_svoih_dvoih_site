@@ -34,9 +34,9 @@ const OoptInfo = () => {
         <h3>Как добраться</h3>
         <p>{reserve.wayTo}</p>
 
-        <h3>Карта территории</h3>
+        {/* <h3>Карта территории</h3>
         <div><img src={screenshot} alt="" style={{ width: "85vw", height: "50vh" }}/></div>
-        <div style={{ height: "2vw" }}></div>
+        <div style={{ height: "2vw" }}></div> */}
         
         <Rules rules={reserve.rules} />
 

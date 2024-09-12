@@ -70,3 +70,32 @@
   bottom: 7%;
   right: 7%;
 }
+
+.RouteCard .niz_title img {
+  width: 12%;
+}
+
+@media (max-width: 425px) {
+  .RouteCard {
+    width: 45vw;
+    height: 60vw;
+    border-radius: 2vw;
+  }
+  
+  .RouteCard .niz_title img {
+    width: 15%;
+  }
+  
+  .RouteCard .first_title {
+    font-size: 3.3vw;
+  }
+  
+  .RouteCard .sec_title {
+    font-size: 2vw;
+  }
+  
+  .RouteCard .niz_title {
+    font-size: 2.5vw;
+    width: 20vw;
+  }
+}

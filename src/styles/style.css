@@ -368,13 +368,6 @@ a {
   width: 16vw;
 }
 
-<<<<<<< HEAD
-.map-page {
-  position: relative;
-  height: 50%;
-  overflow: hidden;
-}
-=======
 @media (max-width: 450px) {
   h2 {
     font-size: 5vw;
@@ -385,11 +378,11 @@ a {
   h3 {
     font-size: 4vw;
   }
-  
+
   p {
     font-size: 3vw;
   }
-  
+
   a {
     font-size: 3vw;
   }
@@ -397,7 +390,7 @@ a {
   .oopt_cards {
     display: flex;
     overflow-x: auto;
-    flex-direction:row;
+    flex-direction: row;
     scroll-snap-type: x mandatory;
     gap: 15px;
     margin: 0 -5vw;
@@ -418,7 +411,7 @@ a {
     color: aliceblue;
     font-size: 4vw;
   }
-  
+
   .last {
     position: relative;
     width: 60vw;
@@ -427,7 +420,7 @@ a {
     cursor: pointer;
     flex: 0 0 auto; /* лучшая вещь */
   }
-  
+
   .last .Btn {
     position: absolute;
     bottom: 7%;
@@ -448,16 +441,16 @@ a {
     margin-left: 5vw;
     margin-top: 25vw;
   }
-  
+
   .oopt_flex {
     font-size: 3vw;
   }
-  
+
   .oopt_info {
     height: 10vw;
     font-size: 3vw;
   }
-  
+
   .input-group {
     display: flex;
     flex-direction: column;
@@ -465,9 +458,13 @@ a {
     flex-wrap: wrap;
     width: 90vw;
   }
-  
+
   .selectItem {
     width: 90vw;
   }
 }
->>>>>>> 34cac4ef5683020f378e9276315f9b03b60e08c7
+
+.map-page {
+  position: relative;
+  overflow: hidden;
+}

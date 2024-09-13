@@ -59,7 +59,12 @@
   bottom: 10%;
   left: 46%;
 }
-@media (max-width: 425px) {
+
+.main_text .description {
+  font-size: 2vw;
+}
+
+@media (max-width: 450px) {
   .layers {
     height: 100vh;
     display: flex;
@@ -77,14 +82,26 @@
     background-position: center;
     will-change: transform;
   }
+
   .main_text {
     position: absolute;
     color: #ffffff;
     font-family: Rubik;
-    left: 3%;
-    top: 40%;
-    font-size: 8vw;
+    left: 6%;
+    top: 23%;
     line-height: 0.9;
-    width: 9.5em;
-  }  
+  } 
+  
+  .main_text .name {
+    font-size: 15vw;
+    width: 15vw;
+  }
+
+  .main_text .description {
+    font-size: 5vw;
+    width: 50vw;
+    top: 50vw;
+    position: absolute;
+  }
+  
 }

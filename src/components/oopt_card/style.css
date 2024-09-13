@@ -71,9 +71,9 @@
 @media (max-width: 450px) {
   .OoptCard {
     position: relative;
-    width: 45vw;
-    height: 60vw;
-    border-radius: 2vw;
+    width: 60vw;
+    height: 80vw;
+    border-radius: 4vw;
     cursor: pointer;
     flex: 0 0 auto; /* лучшая вещь */
   }
@@ -109,27 +109,27 @@
     width: 70%;
     font-family: Rubik-B;
     color: aliceblue;
-    font-size: 3.3vw;
+    font-size: 4vw;
   }
   
   .OoptCard .sec_title {
     position: relative;
     font-family: Rubik;
     color: aliceblue;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   
   .OoptCard .niz_title {
     position: absolute;
     font-family: Rubik;
     color: aliceblue;
-    bottom: 23%;
+    bottom: 20%;
     left: 7%;
     display: flex;
-    gap: 0.5vw;
+    gap: 1vw;
     flex-flow: wrap;
-    font-size: 2.5vw;
-    width: 30vw;
+    font-size: 3.8vw;
+    /* width: 30vw; */
   }
   
   .OoptCard .Btn {
@@ -140,6 +140,6 @@
   }
 
   .OoptCard .niz_title img {
-    width: 10%;
+    width: 12%;
   }
 }

@@ -62,7 +62,7 @@ a {
 /* Home */
 
 .main {
-  padding: 0 5vw;
+  margin: 0 5vw;
   justify-content: center;
 }
 
@@ -71,8 +71,11 @@ a {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 15px;
-  margin-bottom: 2vw;
   width: 100%;
+  z-index: 1;
+  margin: 0 -5vw;
+  margin-bottom: 2vw;
+  padding: 0 5vw;
 }
 
 .route_cards::-webkit-scrollbar {
@@ -363,10 +366,11 @@ a {
 .selectItem {
   width: 16vw;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   h2 {
-    font-size: 4vw;
+    font-size: 5vw;
     padding-bottom: 3vw;
+    padding-top: 8vw;
   }
 
   h3 {
@@ -387,6 +391,8 @@ a {
     flex-direction:row;
     scroll-snap-type: x mandatory;
     gap: 15px;
+    margin: 0 -5vw;
+    padding: 0 5vw;
     margin-bottom: 8vw;
     width: 100%;
   }
@@ -400,14 +406,14 @@ a {
     left: 7%;
     font-family: Rubik-B;
     color: aliceblue;
-    font-size: 3.3vw;
+    font-size: 4vw;
   }
   
   .last {
     position: relative;
-    width: 45vw;
-    height: 60vw;
-    border-radius: 2vw;
+    width: 60vw;
+    height: 80vw;
+    border-radius: 4vw;
     cursor: pointer;
     flex: 0 0 auto; /* лучшая вещь */
   }

@@ -32,8 +32,8 @@ const MainHeader = () => {
           style={{ backgroundImage: "url(png/second.png)", filter: "brightness(95%)" }}
         ></div>
         <div className="main_text">
-          <span style={{ fontSize: "2vw" }}>открываем новые маршруты</span
-          ><br /><span style={{ fontFamily: "Rubik-EB" }}>НА СВОИХ ДВОИХ</span>
+          <span className="description">открываем новые маршруты</span
+          ><br /><span className="name" style={{ fontFamily: "Rubik-EB" }}>НА СВОИХ ДВОИХ</span>
         </div>
         <div
           className="layer layer-first"

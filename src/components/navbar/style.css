@@ -61,7 +61,7 @@ li {
   gap: 2em;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .Navbar {
     height: 5vh;
     font-size: 3vw;

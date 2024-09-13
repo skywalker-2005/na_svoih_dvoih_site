@@ -172,7 +172,7 @@
   font: "Rubik";
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .AboutNsd .first_block img {
     display: none !important;
   }

@@ -75,7 +75,7 @@
   width: 12%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .RouteCard {
     width: 45vw;
     height: 60vw;

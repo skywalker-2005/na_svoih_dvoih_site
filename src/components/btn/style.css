@@ -10,7 +10,7 @@
   color: aliceblue;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .Btn {
     font-size: 2.5vw;
     height: 3vw;

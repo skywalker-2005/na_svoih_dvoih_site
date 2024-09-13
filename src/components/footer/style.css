@@ -34,7 +34,7 @@
   width: 2vw;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .Footer {
     padding: 5vw 0;
     flex-flow: column;

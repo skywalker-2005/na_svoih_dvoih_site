@@ -60,7 +60,7 @@
   right: 2%;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 451px) {
   .OoptCard .first_title {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .OoptCard {
     position: relative;
     width: 45vw;

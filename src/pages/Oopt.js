@@ -92,10 +92,13 @@ const Oopt = () => {
         </div>
       </div>
       
-      <div className="oopt_cards" style={{ paddingTop: "2.5vw", margin: "0 5vw", marginBottom: "2vw"}}>
-        {filteredOopt.map((oopt) => {
-          return <OoptCard key={oopt.key} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.images[oopt.images.length-1]} link={`/ooptInfo/${oopt.id}`}/>;
-        })}
+      <div className='main'>
+        <div className="oopt_cards">
+        {/* <div className="oopt_cards" style={{ paddingTop: "2.5vw", margin: "0 5vw", marginBottom: "2vw"}}> */}
+          {filteredOopt.map((oopt) => {
+            return <OoptCard key={oopt.key} title={oopt.title} region={oopt.region} routesNum={oopt.routesNum} img={oopt.images[oopt.images.length-1]} link={`/ooptInfo/${oopt.id}`}/>;
+          })}
+        </div>
       </div>
     </>
   );

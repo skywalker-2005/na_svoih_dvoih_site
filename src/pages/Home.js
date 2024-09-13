@@ -28,7 +28,7 @@ const Home = () => {
         {/* <h2>Карта маршрутов</h2>
         <MapBlock /> */}
 
-        <h2>Заповедники и национальные парки</h2>
+        <h2>Исследуйте территории</h2>
         <div className="oopt_cards">
           {oopt.map((oopt, i) => {
             if (i > 3) return null;

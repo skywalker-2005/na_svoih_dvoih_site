@@ -86,12 +86,12 @@ a {
 
 .last .first_title {
   position: absolute;
-  top: 6%;
-  left: 5%;
+  top: 18%;
+  left: 2%;
   font-family: Rubik-B;
   color: aliceblue;
   width: 70%;
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .oopt_cards {
@@ -106,6 +106,7 @@ a {
   flex: 0 0 auto; /* лучшая вещь */
   height: 11vw;
   width: 100%;
+  border-radius: 1.2vw;
 }
 
 .last .Btn {
@@ -366,6 +367,7 @@ a {
 .selectItem {
   width: 16vw;
 }
+
 @media (max-width: 450px) {
   h2 {
     font-size: 5vw;
@@ -396,6 +398,7 @@ a {
     margin-bottom: 8vw;
     width: 100%;
   }
+
   .oopt_cards::-webkit-scrollbar {
     display: none;
   }
@@ -422,5 +425,41 @@ a {
     position: absolute;
     bottom: 7%;
     left: 7%;
+  }
+
+  .OoptSearchBar {
+    height: 45vh;
+    margin-bottom: 5vw;
+  }
+
+  .OoptSearchBar h1 {
+    font-size: 5vw;
+  }
+
+  .oopt_wrap {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 25vw;
+  }
+  
+  .oopt_flex {
+    font-size: 3vw;
+  }
+  
+  .oopt_info {
+    height: 10vw;
+    font-size: 3vw;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+  
+  .selectItem {
+    width: 90vw;
   }
 }

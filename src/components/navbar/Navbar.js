@@ -49,9 +49,9 @@ const Navbar = () => {
         <NavLink className="reef" to='/' onClick={() => setIsOpen(false)}>
           <li>Главная</li>
         </NavLink>
-        <NavLink className="reef" to='/mapPage' onClick={() => setIsOpen(false)}>
+        {/* <NavLink className="reef" to='/mapPage' onClick={() => setIsOpen(false)}>
           <li>Карта</li>
-        </NavLink>
+        </NavLink> */}
         <NavLink className="reef" to='/oopt' onClick={() => setIsOpen(false)}>
           <li>Тропы</li>
         </NavLink>

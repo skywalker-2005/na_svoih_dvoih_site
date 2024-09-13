@@ -112,8 +112,8 @@ a {
 
 .search_wrap {
   position: absolute;
-  top: 8.5vw;
-  left: 3vw;
+  top: 7vw;
+  left: 2vw;
 }
 
 .search {
@@ -359,4 +359,10 @@ a {
 
 .selectItem {
   width: 16vw;
+}
+
+.map-page {
+  position: relative;
+  height: 50%;
+  overflow: hidden;
 }

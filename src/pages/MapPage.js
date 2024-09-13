@@ -8,6 +8,22 @@ import museum from "../svg/museum.svg";
 import plus from "../svg/plus.svg";
 import minus from "../svg/minus.svg";
 import navi from "../svg/navi.svg";
+import MapComponent from "../components/map/MapC";
+import React from "react";
+
+// import {
+//   interaction,
+//   layer,
+//   custom,
+//   control,
+//   Interactions,
+//   Overlays,
+//   Controls,
+//   Map,
+//   Layers,
+//   Overlay,
+//   Util,
+// } from "react-openlayers";
 
 const MapPage = () => {
   const imgStyle = { width: "1vw", marginRight: "0.5vw" };
@@ -15,6 +31,9 @@ const MapPage = () => {
 
   return (
     <>
+      <div className="map-page">
+        <MapComponent />
+      </div>
       <div className="search_wrap">
         <div className="search">
           <div className="search_item sit1">

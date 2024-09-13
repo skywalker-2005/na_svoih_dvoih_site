@@ -1,0 +1,11 @@
+{
+  "include": ["./src"],
+  "exclude": ["./src/template"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  }
+}

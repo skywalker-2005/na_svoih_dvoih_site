@@ -201,12 +201,21 @@
     align-items: flex-start;
   }
   .AboutNsd .score .block_num h2 {
-    font-size: 8vw;
+    font-size: 10vw;
+  }
+  .AboutNsd .score .block_num h3 {
+    font-size: 3vw;
   }
   .AboutNsd .score .block_num {
-    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
   .AboutNsd .score .score_num {
     padding-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
   }
 }

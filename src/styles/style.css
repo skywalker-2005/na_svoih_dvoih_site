@@ -99,6 +99,7 @@ a {
   flex-direction: column;
   row-gap: 1em;
   margin-bottom: 2vw;
+  margin-top: 2vw;
 }
 
 .last {

@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && git add -A && git commit -m \"Deploy\" && git push origin kate"
   },
   "eslintConfig": {
     "extends": [
@@ -41,7 +42,12 @@
       "last 1 safari version"
     ]
   },
+<<<<<<< HEAD
   "devDependencies": {
     "react-openlayers": "^0.3.0"
   }
+=======
+  "homepage": "https://myusername.github.io",
+  "base": "./public"
+>>>>>>> 34cac4ef5683020f378e9276315f9b03b60e08c7
 }

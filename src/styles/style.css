@@ -62,7 +62,7 @@ a {
 /* Home */
 
 .main {
-  padding: 0 5vw;
+  margin: 0 5vw;
   justify-content: center;
 }
 
@@ -71,8 +71,11 @@ a {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 15px;
-  margin-bottom: 2vw;
   width: 100%;
+  z-index: 1;
+  margin: 0 -5vw;
+  margin-bottom: 2vw;
+  padding: 0 5vw;
 }
 
 .route_cards::-webkit-scrollbar {
@@ -83,12 +86,12 @@ a {
 
 .last .first_title {
   position: absolute;
-  top: 6%;
-  left: 5%;
+  top: 18%;
+  left: 2%;
   font-family: Rubik-B;
   color: aliceblue;
   width: 70%;
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .oopt_cards {
@@ -100,6 +103,10 @@ a {
 
 .last {
   position: relative;
+  flex: 0 0 auto; /* лучшая вещь */
+  height: 11vw;
+  width: 100%;
+  border-radius: 1.2vw;
 }
 
 .last .Btn {
@@ -354,15 +361,113 @@ a {
   display: flex;
   gap: 5vw;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90vw;
 }
 
 .selectItem {
   width: 16vw;
 }
 
+<<<<<<< HEAD
 .map-page {
   position: relative;
   height: 50%;
   overflow: hidden;
 }
+=======
+@media (max-width: 450px) {
+  h2 {
+    font-size: 5vw;
+    padding-bottom: 3vw;
+    padding-top: 8vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+  
+  p {
+    font-size: 3vw;
+  }
+  
+  a {
+    font-size: 3vw;
+  }
+
+  .oopt_cards {
+    display: flex;
+    overflow-x: auto;
+    flex-direction:row;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    margin: 0 -5vw;
+    padding: 0 5vw;
+    margin-bottom: 8vw;
+    width: 100%;
+  }
+
+  .oopt_cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .last .first_title {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    font-family: Rubik-B;
+    color: aliceblue;
+    font-size: 4vw;
+  }
+  
+  .last {
+    position: relative;
+    width: 60vw;
+    height: 80vw;
+    border-radius: 4vw;
+    cursor: pointer;
+    flex: 0 0 auto; /* лучшая вещь */
+  }
+  
+  .last .Btn {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+  }
+
+  .OoptSearchBar {
+    height: 45vh;
+    margin-bottom: 5vw;
+  }
+
+  .OoptSearchBar h1 {
+    font-size: 5vw;
+  }
+
+  .oopt_wrap {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 25vw;
+  }
+  
+  .oopt_flex {
+    font-size: 3vw;
+  }
+  
+  .oopt_info {
+    height: 10vw;
+    font-size: 3vw;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+  
+  .selectItem {
+    width: 90vw;
+  }
+}
+>>>>>>> 34cac4ef5683020f378e9276315f9b03b60e08c7

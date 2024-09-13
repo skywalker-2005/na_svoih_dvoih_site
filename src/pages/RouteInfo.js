@@ -44,9 +44,9 @@ const RouteInfo = () => {
         <h3>Описание маршрута</h3>
         <p>{route.description}</p>
 
-        <h3>Маршрут на карте</h3>
+        {/* <h3>Маршрут на карте</h3>
         <div><img src={screenshot} alt="" style={{ width: "85vw", height: "50vh" }}/></div>
-        <div style={{ height: "2vw" }}></div>
+        <div style={{ height: "2vw" }}></div> */}
         
         {reserve.rules && 
         <Rules rules={reserve.rules} />

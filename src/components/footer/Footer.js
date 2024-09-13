@@ -13,12 +13,6 @@ const Footer = () => {
         </p>
       </div>
       <div className="footer_item">
-        <p className="foot_t">Полезные ссылки</p>
-        <p className="foot_t2">
-          <a href='/about'>О проекте</a>
-        </p>
-      </div>
-      <div className="footer_item">
         <p className="foot_t">Социальные сети</p>
         <div className="social">
           <a href='https://vk.com/na.svoih.dvoih' target="_blank" rel="noreferrer"><img src={vk} alt='' className='soc'></img></a>

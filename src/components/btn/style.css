@@ -9,3 +9,16 @@
   background-color: #f0a54e;
   color: aliceblue;
 }
+
+@media (max-width: 450px) {
+  .Btn {
+    font-size: 3vw;
+    height: 4vw;
+    padding: 1.5vw 1.5vw;
+    border-radius: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f0a54e;
+    color: aliceblue;
+  }
+}

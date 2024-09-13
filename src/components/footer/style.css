@@ -33,3 +33,20 @@
 .Footer .soc {
   width: 2vw;
 }
+
+@media (max-width: 450px) {
+  .Footer {
+    padding: 5vw 0;
+    flex-flow: column;
+  }
+  .Footer p {
+    font-size: 3vw;
+  }
+  .Footer .footer_item .social img {
+    width: 5vw;
+  }
+  .Footer .footer_item .social {
+    padding-top: 1vw;
+    gap: 2vw;
+  }
+}

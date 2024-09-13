@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Using OpenLayers with Webpack</title>
+    <style></style>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
+      .wrapper {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 150pt auto;
+        grid-template-rows: auto;
+      }
+
+      .list {
+        margin: 0;
+        padding: 0;
+        grid-row: 1;
+        grid-column: 1;
+        scroll-behavior: smooth;
+        list-style-type: none;
+      }
+
+      .list-elem {
+        width: 130pt;
+        height: 50pt;
+        margin: 10pt;
+        padding: 0;
+      }
+
+      .route-button {
+        width: 100%;
+        height: 50pt;
+        line-height: 50pt;
+        text-align: center;
+        background: beige;
+        border-radius: 5pt;
+      }
+
+      .route-button:hover {
+        background: bisque;
+      }
+
+      #map {
+        grid-row: 1;
+        grid-column: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul class="list">
+        <li class="list-elem">
+          <div id="defult-view" class="route-button" style>Default</div>
+        </li>
+        <li class="list-elem">
+          <div id="cheres-pereval-route-view" class="route-button" style>
+            Через перевал
+          </div>
+        </li>
+      </ul>
+
+      <div id="map"></div>
+    </div>
+  </body>
+</html>

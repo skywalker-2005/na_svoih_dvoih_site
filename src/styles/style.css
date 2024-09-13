@@ -120,8 +120,8 @@ a {
 
 .search_wrap {
   position: absolute;
-  top: 8.5vw;
-  left: 3vw;
+  top: 7vw;
+  left: 2vw;
 }
 
 .search {
@@ -369,6 +369,13 @@ a {
   width: 16vw;
 }
 
+<<<<<<< HEAD
+.map-page {
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+}
+=======
 @media (max-width: 450px) {
   h2 {
     font-size: 5vw;
@@ -464,3 +471,4 @@ a {
     width: 90vw;
   }
 }
+>>>>>>> 34cac4ef5683020f378e9276315f9b03b60e08c7

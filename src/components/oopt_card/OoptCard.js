@@ -5,8 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const OoptCard = (props) => {
   return (
-    
-    <div className="OoptCard" style={{ backgroundImage: `url(${props.img})`, backgroundSize: 'cover',  backgroundPosition: 'center' }}>
+    <NavLink to={props.link} className='OoptCard' style={{ backgroundImage: `url(${props.img})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
       <div className='titles'>
         <div className="first_title">{props.title}</div>
         <div className="sec_title">{props.region}</div>
@@ -15,7 +14,7 @@ const OoptCard = (props) => {
         <img src={arr_wh} alt="" width="10%" /> {props.routesNum}
       </div>
       <Btn text='Узнать больше >' link={props.link} />
-    </div>
+    </NavLink>
   );
 }
  

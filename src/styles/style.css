@@ -74,7 +74,7 @@ a {
   width: 100%;
   z-index: 1;
   margin: 0 -5vw;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
   padding: 0 5vw;
 }
 
@@ -388,6 +388,10 @@ a {
 
   a {
     font-size: 3vw;
+  }
+
+  .route_cards {
+    margin-bottom: 5vw;
   }
 
   .oopt_cards {

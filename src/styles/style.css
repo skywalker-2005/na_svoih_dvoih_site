@@ -436,7 +436,7 @@ a {
 
   /* Oopt */
   .OoptSearchBar {
-    height: 45vh;
+    height: auto;
     margin-bottom: 5vw;
   }
 
@@ -457,6 +457,7 @@ a {
   .oopt_info {
     height: 10vw;
     font-size: 3vw;
+    margin-bottom: 10vw;
   }
 
   .input-group {

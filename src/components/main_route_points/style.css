@@ -20,3 +20,25 @@
   align-items: flex-start;
   gap: 2vw;
 }
+
+@media (max-width: 450px) {
+  .MainRoutePoints {
+    margin: 5vw 0;
+  }
+  .route_point {
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+  .route_point img {
+    width: 10vw;
+    margin-top: 5vw;
+  }
+  .route_point h3 {
+    text-align: center;
+  }
+}

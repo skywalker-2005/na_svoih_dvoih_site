@@ -56,3 +56,47 @@
   display: flex;
   gap: 1vw;
 }
+
+@media (max-width: 450px) {
+  .HeaderImg {
+    margin-bottom: 5vw;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .HeaderImg .info_flex {
+    margin-top: 20vh;
+  }
+
+  .HeaderImg .main_rt {
+    font-family: Rubik-B;
+    color: #f4f4f4;
+    font-size: 5.5vw;
+    padding: 0 5vw;
+  }
+
+  .HeaderImg .type_rt {
+    width: 20vw;
+    font-size: 4vw;
+    margin-top: 5vw;
+    margin-bottom: 20vw;
+  }
+
+  .HeaderImg .foot_rt {
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    font-family: Rubik;
+    color: white;
+    font-size: 3.8vw;
+  }
+  
+  .foot_rt .item {
+    display: flex;
+    gap: 2vw;
+  }
+
+  .foot_rt .item img {
+    height: 3vw !important;
+  }
+}

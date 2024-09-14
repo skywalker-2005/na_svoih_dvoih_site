@@ -20,3 +20,14 @@
   border-radius: 0.5vw;
   margin: 0 1vw;
 }
+
+@media (max-width: 450px) {
+  .image {
+    width: 40vw;
+    height: 20vw;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 2vw;
+    margin: 0 1vw;
+  }
+}

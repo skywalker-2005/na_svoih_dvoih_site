@@ -16,7 +16,6 @@ const RouteInfo = () => {
   const { type, id } = useParams(); // считать id тропы
   const reserve = oopt[type-1];
   const route = reserve.routes[id-1];
-  console.log(reserve);
   return (
     <>
       <HeaderImg title={route.title} type={route.type} distance={route.distance} duration={route.duration} wayType={route.wayType} img={route.images[route.images.length - 1]}/>

@@ -31,7 +31,7 @@
     margin: 0 1vw;
   }
 } */
-.Gallery {
+/* .Gallery {
   width: 88vw;
   margin: 0 auto;
   display: flex;
@@ -66,6 +66,102 @@
 }
 
 /* Стили для модального окна */
+/* .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 1vw;
+  object-fit: cover;
+}
+
+.modal img {
+  width: auto;
+  height: auto;
+  cursor: default;
+} */
+
+/* Стили для кнопок навигации */
+/* .prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2vw;
+  padding: 1vw;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.prev-button {
+  left: 1vw;
+}
+
+.next-button {
+  right: 1vw;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 450px) {
+  .prev-button,
+  .next-button {
+    font-size: 5vw;
+    padding: 2vw;
+  }
+} */
+.Gallery {
+  width: 88vw;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+
+.Gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  width: 20vw;
+  height: 12vw;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  margin: 0 1vw;
+}
+
+@media (max-width: 450px) {
+  .image {
+    width: 40vw;
+    height: 20vw;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 2vw;
+    margin: 0 1vw;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -93,7 +189,6 @@
   cursor: default;
 }
 
-/* Стили для кнопок навигации */
 .prev-button,
 .next-button {
   position: absolute;

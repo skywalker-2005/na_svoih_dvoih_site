@@ -60,12 +60,13 @@
 @media (max-width: 450px) {
   .HeaderImg {
     margin-bottom: 5vw;
-    height: 60vh;
+    height: auto;
     width: 100vw;
   }
 
   .HeaderImg .info_flex {
     margin-top: 20vh;
+    margin-bottom: 5vh;
   }
 
   .HeaderImg .main_rt {

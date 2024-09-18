@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "thaba",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 5002015.747799696400762, 5282840.226180247962475 ], [ 5002394.675519722513855, 5283051.304931751452386 ], [ 5002615.204309771768749, 5282996.821348328143358 ] ] ] } }
+]
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "savino",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 4176150.591997777111828, 5595233.700579250231385 ] } }
+]
+}

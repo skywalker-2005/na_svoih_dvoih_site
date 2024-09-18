@@ -74,7 +74,7 @@ a {
   width: 100%;
   z-index: 1;
   margin: 0 -5vw;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
   padding: 0 5vw;
 }
 
@@ -228,9 +228,9 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 5.6vw;
+  margin: 0 5vw;
   text-align: justify;
-  width: 85vw;
+  width: 90vw;
 }
 
 .rtinfo1 {
@@ -377,15 +377,21 @@ a {
   }
 
   h3 {
-    font-size: 4vw;
+    font-size: 4.5vw;
+    padding-top: 3vw;
   }
 
   p {
-    font-size: 3vw;
+    font-size: 3.8vw;
+    padding: 2vw 0;
   }
 
   a {
     font-size: 3vw;
+  }
+
+  .route_cards {
+    margin-bottom: 5vw;
   }
 
   .oopt_cards {
@@ -428,8 +434,9 @@ a {
     left: 7%;
   }
 
+  /* Oopt */
   .OoptSearchBar {
-    height: 45vh;
+    height: auto;
     margin-bottom: 5vw;
   }
 
@@ -450,6 +457,7 @@ a {
   .oopt_info {
     height: 10vw;
     font-size: 3vw;
+    margin-bottom: 10vw;
   }
 
   .input-group {
@@ -462,6 +470,36 @@ a {
 
   .selectItem {
     width: 90vw;
+  }
+
+  /* About us */
+
+  .about_us_block {
+    margin: 0 5vw;
+    margin-top: 18vw;
+    margin-bottom: 3vw;
+    justify-content: center;
+  }
+
+  .about_us_block .social {
+    margin-top: 5vw;
+    flex-direction: column;
+  }
+  
+  .about_us_block .soc {
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .social img {
+    width: 5vw;
+    margin-top: -0.1vw;
+  }
+  
+  .soc {
+    display: flex;
+    gap: 1vw;
   }
 }
 

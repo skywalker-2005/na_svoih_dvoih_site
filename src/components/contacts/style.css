@@ -6,3 +6,14 @@
   font-size: 1vw;
   margin-bottom: 2vw;
 }
+
+@media (max-width: 450px) {
+  .Contacts {
+    margin-right: 10vw;
+    color: #1e444b;
+    font-family: Rubik-Re;
+    font-size: 3.8vw;
+    margin-bottom: 5vw;
+    text-align: start;
+  }
+}

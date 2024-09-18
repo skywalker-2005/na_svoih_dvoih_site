@@ -28,6 +28,7 @@
   display: flex;
   text-align: left;
   flex-flow: wrap;
+  flex-direction: column;
   gap: 0.2vw;
   height: auto;
 }

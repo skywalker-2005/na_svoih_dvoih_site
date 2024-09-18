@@ -12,3 +12,9 @@
 .BackBtn p {
   color: aliceblue;
 }
+
+@media (max-width: 450px) {
+  .BackBtn {
+    top: 20vw;
+  }
+}

@@ -33,10 +33,10 @@ const Home = () => {
             );
           })}
         </div>
-        <Btn text="Больше троп >" link="/oopt"/>
+        <Btn text="Больше троп >" link="/oopt" />
 
-        {/* <h2>Карта маршрутов</h2>
-        <MapBlock /> */}
+        <h2>Карта маршрутов</h2>
+        <MapBlock />
 
         <h2>Исследуйте территории</h2>
         <div className="oopt_cards">

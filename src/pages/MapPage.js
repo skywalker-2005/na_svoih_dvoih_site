@@ -10,6 +10,7 @@ import minus from "../svg/minus.svg";
 import navi from "../svg/navi.svg";
 import MapComponent from "../components/map/MapC";
 import React from "react";
+import useMapScale from "../components/map/MapC";
 
 // import {
 //   interaction,
@@ -28,6 +29,8 @@ import React from "react";
 const MapPage = () => {
   const imgStyle = { width: "1vw", marginRight: "0.5vw" };
   const imgStyleLarge = { width: "1.8vw" };
+
+  const { zoomIn, zoomOut } = useMapScale();
 
   return (
     <>
@@ -69,7 +72,7 @@ const MapPage = () => {
       <div className="plmi_wrap">
         <div className="plmi">
           <div className="plmiitem">
-            <img src={plus} alt="" className="plm" />
+            <img src={plus} alt="" className="plm" onClick={zoomIn} />
           </div>
           <div className="plmiitem">
             <img
@@ -77,6 +80,7 @@ const MapPage = () => {
               alt=""
               className="plm"
               style={{ paddingTop: "50%" }}
+              onClick={zoomOut}
             />
           </div>
           <div className="plmiitem">

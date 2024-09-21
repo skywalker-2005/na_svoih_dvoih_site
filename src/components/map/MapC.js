@@ -11,8 +11,16 @@ import "ol/ol.css";
 import VectorLayer from "ol/layer/Vector";
 import VectorSource from "ol/source/Vector";
 import GeoJSON from "ol/format/GeoJSON";
+import { Select } from "ol/interaction";
+import { Link, useHistory } from "react-router-dom";
+// import RouteCard from "../../components/route_card/RouteCard"
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import useMapScale from "./scale";
 
 const MapComponent = (props) => {
+  const navigate = useNavigate();
   useEffect(() => {
     function init() {
       const vectorStyle = new Style({
@@ -112,7 +120,11 @@ const MapComponent = (props) => {
           name: "cherez_pereval",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 8,
+              type: 1,
+            },
           },
           features: [
             {
@@ -286,34 +298,21 @@ const MapComponent = (props) => {
 
         {
           type: "FeatureCollection",
-          name: "sav",
-          crs: {
-            type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
-          },
-          features: [
-            {
-              type: "Feature",
-              properties: { id: null },
-              geometry: {
-                type: "Point",
-                coordinates: [4176150.591997777111828, 5595233.700579250231385],
-              },
-            },
-          ],
-        },
-
-        {
-          type: "FeatureCollection",
           name: "psydah",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 8,
+              type: 1,
+            },
           },
           features: [
             {
               type: "Feature",
-              properties: { id: null },
+              properties: {
+                id: null,
+              },
               geometry: {
                 type: "MultiLineString",
                 coordinates: [
@@ -403,7 +402,11 @@ const MapComponent = (props) => {
           name: "achips",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 2,
+              type: 1,
+            },
           },
           features: [
             {
@@ -685,7 +688,11 @@ const MapComponent = (props) => {
           name: "cherez_gory",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 7,
+              type: 1,
+            },
           },
           features: [
             {
@@ -878,7 +885,11 @@ const MapComponent = (props) => {
           name: "engelman",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 6,
+              type: 1,
+            },
           },
           features: [
             {
@@ -1072,7 +1083,11 @@ const MapComponent = (props) => {
           name: "k_moryu",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 4,
+              type: 1,
+            },
           },
           features: [
             {
@@ -1255,7 +1270,11 @@ const MapComponent = (props) => {
           name: "krasn_pol",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 9,
+              type: 1,
+            },
           },
           features: [
             {
@@ -1441,7 +1460,11 @@ const MapComponent = (props) => {
           name: "medv_vor",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 5,
+              type: 1,
+            },
           },
           features: [
             {
@@ -1606,7 +1629,11 @@ const MapComponent = (props) => {
           name: "po_doline",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 11,
+              type: 1,
+            },
           },
           features: [
             {
@@ -1640,7 +1667,11 @@ const MapComponent = (props) => {
           name: "psenodah",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 1,
+              type: 1,
+            },
           },
           features: [
             {
@@ -1899,7 +1930,11 @@ const MapComponent = (props) => {
           name: "uzurub",
           crs: {
             type: "name",
-            properties: { name: "urn:ogc:def:crs:EPSG::3857" },
+            properties: {
+              name: "urn:ogc:def:crs:EPSG::3857",
+              id: 3,
+              type: 1,
+            },
           },
           features: [
             {
@@ -2152,6 +2187,322 @@ const MapComponent = (props) => {
       });
 
       map.addLayer(vectorLayer);
+
+      const selectInteraction = new Select({
+        layers: [vectorLayer],
+      });
+
+      map.addInteraction(selectInteraction);
+
+      selectInteraction.on("select", function (e) {
+        const selectedFeatures = e.target.getFeatures();
+
+        if (selectedFeatures.getLength() > 0) {
+          const selectedFeature = selectedFeatures.item(0);
+          const coordinates = selectedFeature.getGeometry().getCoordinates();
+
+          let foundCollectionName;
+
+          geojsonData.forEach((collection) => {
+            if (collection.type === "FeatureCollection") {
+              const feature = collection.features.find((feature) => {
+                return (
+                  feature.geometry.type === "MultiLineString" &&
+                  feature.geometry.coordinates.some((coord) =>
+                    coord.every(
+                      (coordItem, index) =>
+                        Math.abs(coordItem[0] - coordinates[0][index][0]) <
+                          0.0001 &&
+                        Math.abs(coordItem[1] - coordinates[0][index][1]) <
+                          0.0001
+                    )
+                  )
+                );
+              });
+
+              if (feature) {
+                foundCollectionName = collection.name;
+                //console.log(collection.name);
+              }
+
+              let ident;
+              let tip;
+
+              switch (foundCollectionName) {
+                case "cherez_pereval":
+                  ident = 8;
+                  tip = 1;
+                  break;
+                case "psenodah":
+                  ident = 1;
+                  tip = 1;
+                  break;
+                case "achips":
+                  ident = 2;
+                  tip = 1;
+                  break;
+                case "uzurub":
+                  ident = 3;
+                  tip = 1;
+                  break;
+                case "k_moryu":
+                  ident = 4;
+                  tip = 1;
+                  break;
+                case "medv_vor":
+                  ident = 5;
+                  tip = 1;
+                  break;
+                case "engelman":
+                  ident = 6;
+                  tip = 1;
+                  break;
+                case "cherez_gory":
+                  ident = 7;
+                  tip = 1;
+                  break;
+                case "cherez_gory":
+                  ident = 7;
+                  tip = 1;
+                  break;
+                case "krasn_pol":
+                  ident = 9;
+                  tip = 1;
+                  break;
+                case "po_doline":
+                  ident = 11;
+                  tip = 1;
+                  break;
+                case "sarykum":
+                  ident = 1;
+                  tip = 3;
+                  break;
+                case "markova":
+                  ident = 2;
+                  tip = 3;
+                  break;
+                case "yuzhny":
+                  ident = 3;
+                  tip = 3;
+                  break;
+                case "severny":
+                  ident = 4;
+                  tip = 3;
+                  break;
+                case "leymi":
+                  ident = 1;
+                  tip = 4;
+                  break;
+                case "egikal":
+                  ident = 2;
+                  tip = 4;
+                  break;
+                case "hamhi":
+                  ident = 3;
+                  tip = 4;
+                  break;
+                case "targim":
+                  ident = 4;
+                  tip = 4;
+                  break;
+                case "sosnovaya":
+                  ident = 5;
+                  tip = 4;
+                  break;
+                case "oblepihovaya":
+                  ident = 6;
+                  tip = 4;
+                  break;
+                case "thaba":
+                  ident = 7;
+                  tip = 4;
+                  break;
+                case "mizhirgi":
+                  ident = 1;
+                  tip = 5;
+                  break;
+                case "boran":
+                  ident = 2;
+                  tip = 5;
+                  break;
+                case "k_narz":
+                  ident = 3;
+                  tip = 5;
+                  break;
+                case "k_ledniku":
+                  ident = 4;
+                  tip = 5;
+                  break;
+                case "azhek":
+                  ident = 1;
+                  tip = 6;
+                  break;
+                case "agurskie":
+                  ident = 2;
+                  tip = 6;
+                  break;
+                case "orlinye":
+                  ident = 3;
+                  tip = 6;
+                  break;
+                case "zmeykovskie":
+                  ident = 4;
+                  tip = 6;
+                  break;
+                case "volkonskoe":
+                  ident = 5;
+                  tip = 6;
+                  break;
+                case "33":
+                  ident = 6;
+                  tip = 6;
+                  break;
+                case "chudo-krasotka":
+                  ident = 7;
+                  tip = 6;
+                  break;
+                case "berendeevo":
+                  ident = 8;
+                  tip = 6;
+                  break;
+                case "psydah":
+                  ident = 9;
+                  tip = 6;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 7;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 7;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 7;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 7;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 7;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 7;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 8;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 9;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 9;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 9;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 9;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 9;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 10;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 10;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 10;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 10;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 10;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 11;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 11;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 11;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 11;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 11;
+                  break;
+                case "":
+                  ident = 1;
+                  tip = 11;
+                  break;
+              }
+
+              let link = `/ooptInfo/${tip}/routeInfo/${ident}`;
+              navigate(link);
+            }
+          });
+        } else {
+          console.log("Ничего не выбрано");
+        }
+      });
 
       map.on("click", function (e) {
         console.log(e.coordinate);

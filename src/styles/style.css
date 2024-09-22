@@ -144,6 +144,7 @@ a {
   align-content: center;
   padding: 0.5vw;
   margin: 0.2vw;
+  cursor: pointer;
 }
 
 .sit1 {
@@ -485,18 +486,18 @@ a {
     margin-top: 5vw;
     flex-direction: column;
   }
-  
+
   .about_us_block .soc {
     flex-direction: column;
     align-items: center;
     gap: 1vw;
   }
-  
+
   .social img {
     width: 5vw;
     margin-top: -0.1vw;
   }
-  
+
   .soc {
     display: flex;
     gap: 1vw;

@@ -1,14 +1,14 @@
-import map from "../../png/map.png";
-import Btn from '../btn/Btn';
-import './style.css';
+import Btn from "../btn/Btn";
+import "./style.css";
+import MapComponent from "../map/MapC";
 
 const MapBlock = () => {
   return (
     <div className="MapBlock">
-      <img src={map} alt="" />
-      <Btn text='Перейти к карте >' link='/map' />
+      <MapComponent />
+      <Btn text="Перейти к карте >" link="/mapPage" />
     </div>
   );
-}
- 
+};
+
 export default MapBlock;

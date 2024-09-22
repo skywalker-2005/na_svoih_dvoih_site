@@ -9,33 +9,29 @@ import plus from "../svg/plus.svg";
 import minus from "../svg/minus.svg";
 import navi from "../svg/navi.svg";
 import MapComponent from "../components/map/MapC";
-import React from "react";
 import useMapScale from "../components/map/MapC";
+import { useLocation } from "react-router-dom";
+import React, { useCallback, useState } from "react";
 
-// import {
-//   interaction,
-//   layer,
-//   custom,
-//   control,
-//   Interactions,
-//   Overlays,
-//   Controls,
-//   Map,
-//   Layers,
-//   Overlay,
-//   Util,
-// } from "react-openlayers";
-
-const MapPage = () => {
+const MapPage = (props) => {
   const imgStyle = { width: "1vw", marginRight: "0.5vw" };
   const imgStyleLarge = { width: "1.8vw" };
 
-  const { zoomIn, zoomOut } = useMapScale();
+  const [zoomIn, setZoomIn] = useState(false);
+  const [zoomOut, setZoomOut] = useState(false);
+
+  const handleZoomIn = () => {
+    setZoomIn(true);
+  };
+
+  const handleZoomOut = () => {
+    setZoomOut(true);
+  };
 
   return (
     <>
       <div className="map-page">
-        <MapComponent />
+        <MapComponent onZoomIn={zoomIn} onZoomOut={zoomOut} />
       </div>
       <div className="search_wrap">
         <div className="search">
@@ -71,20 +67,19 @@ const MapPage = () => {
       </div>
       <div className="plmi_wrap">
         <div className="plmi">
-          <div className="plmiitem">
-            <img src={plus} alt="" className="plm" onClick={zoomIn} />
+          <div className="plmiitem" onClick={handleZoomIn}>
+            <img src={plus} alt="Увеличить" className="plm" />
           </div>
-          <div className="plmiitem">
+          <div className="plmiitem" onClick={handleZoomOut}>
             <img
               src={minus}
-              alt=""
+              alt="Уменьшить"
               className="plm"
               style={{ paddingTop: "50%" }}
-              onClick={zoomOut}
             />
           </div>
           <div className="plmiitem">
-            <img src={navi} alt="" className="plm" />
+            <img src={navi} alt="Навигация" className="plm" />
           </div>
         </div>
       </div>

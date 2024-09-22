@@ -1,9 +1,9 @@
 .MapBlock {
   position: relative;
-}
-
-.MapBlock img {
-  width: 100%;
+  width: 90vw;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 2vw;
 }
 
 .MapBlock .Btn {

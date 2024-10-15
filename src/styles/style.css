@@ -147,6 +147,16 @@ a {
   cursor: pointer;
 }
 
+.fi {
+  height: 2vw;
+  width: 16vw;
+  white-space: nowrap;
+  font-size: 1vw;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+}
+
 .sit1 {
   height: 2vw;
   background-color: #ffffff;
@@ -160,6 +170,7 @@ a {
 .sit2 {
   white-space: nowrap;
   overflow: hidden;
+  width: 2.4vw;
 }
 
 .sit3 {

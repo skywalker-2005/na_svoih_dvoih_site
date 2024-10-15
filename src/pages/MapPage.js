@@ -31,6 +31,7 @@ import { Link, useHistory } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import * as ol from "openlayers";
 
 const MapPage = (props) => {
   const imgStyle = { width: "1vw", marginRight: "0.5vw" };
@@ -3666,6 +3667,9 @@ const MapPage = (props) => {
       {
         type: "FeatureCollection",
         name: "cherez_pereval",
+        attributes: {
+          description: "Через перевал",
+        },
         crs: {
           type: "name",
           properties: {
@@ -3847,6 +3851,9 @@ const MapPage = (props) => {
       {
         type: "FeatureCollection",
         name: "psydah",
+        attributes: {
+          description: "Псыдах",
+        },
         crs: {
           type: "name",
           properties: {
@@ -10881,6 +10888,52 @@ const MapPage = (props) => {
       navigate(`/ooptInfo/${tip}/routeInfo/${ident}`);
     });
 
+    // Получаем элементы поиска
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+
+    // Обработчик на кнопку поиска
+    searchButton.addEventListener("click", function () {
+      const searchTerm = searchInput.value.trim().toLowerCase(); // Получаем введенное значение
+
+      // Ищем объект с соответствующим description или id
+      const foundFeature = geojsonData
+        .flatMap((collection) =>
+          collection.features.map((feature) => ({ feature, collection }))
+        ) // Проходим по всем features и коллекциям
+        .find(
+          ({ feature, collection }) =>
+            feature.geometry.type.toLowerCase() === searchTerm || // Проверяем тип геометрии
+            feature.properties.id?.toLowerCase().includes(searchTerm) || // Проверяем id
+            collection.attributes.description
+              ?.toLowerCase()
+              .includes(searchTerm) // Проверяем описание коллекции
+        );
+
+      if (foundFeature) {
+        console.log(
+          "Найден объект:",
+          foundFeature.collection.attributes.description
+        );
+
+        // Читаем найденную геометрию с помощью OpenLayers
+        const geometry = new GeoJSON()
+          .readFeature(foundFeature.feature)
+          .getGeometry();
+        const extent = geometry.getExtent();
+
+        console.log(extent);
+        // Приближаем карту к найденному объекту
+        const bbox = extent ? extent : new ol.BBox();
+        map.getView().fit(bbox, {
+          size: map.getSize(),
+          duration: 1000,
+        });
+      } else {
+        console.log("Объект не найден.");
+      }
+    });
+
     map.on("click", function (e) {
       console.log(e.coordinate);
     });
@@ -10908,13 +10961,23 @@ const MapPage = (props) => {
       </div>
       <div className="search_wrap">
         <div className="search">
-          {/* <div className="search_item sit1">
+          <form method="get" className="search_item sit1" id="searchForm">
             <img src={search} alt="" style={{ ...imgStyle, opacity: 1 }} />
-            Маршрут, регион, достопримечательности
-          </div> */}
-          <div className="search_item sit2">
+            <input
+              type="text"
+              name="username"
+              id="search-input"
+              placeholder="Маршрут, регион, достопримечательности..."
+              className="fi"
+            ></input>
+          </form>
+          <button id="search-button" className="search_item sit2">
+            {">"}
+          </button>
+
+          {/* <div className="search_item sit2">
             <img src={sear_map} alt="" style={imgStyleLarge} />
-          </div>
+          </div> */}
           <div className="search_item sit3">Все</div>
           <div onClick={toggleLayers}>
             <div className="search_item sit4">
